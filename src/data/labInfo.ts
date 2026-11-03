@@ -1,3 +1,5 @@
+import logoImage from "../assets/logo_roma.png";
+
 export interface LabHours {
   days: string;
   hours: string;
@@ -30,7 +32,7 @@ export const LAB_CONTACT = {
     lat: 33.5714,
     lng: -7.6186,
   },
-  logoPath: "/assets/aistudio/logo_roma_transparent_b60a769e.png",
+  logoPath: logoImage,
 };
 
 export const getWhatsAppLink = (customMessage?: string): string => {
