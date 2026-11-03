@@ -1,0 +1,6 @@
+{
+  "name": "Laboratoire Roma Casablanca",
+  "description": "Laboratoire d'Analyses Médicales Roma à Casablanca (Dr MECHAL Youness). Prélèvements sur place et à domicile, résultats fiables et rapides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
