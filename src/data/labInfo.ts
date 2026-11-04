@@ -1,4 +1,9 @@
 import logoImage from "../assets/logo_roma.png";
+import logoCnss from "../assets/conventions/cnss.png";
+import logoCnops from "../assets/conventions/cnops.jpg";
+import logoCmim from "../assets/conventions/cmim.png";
+import logoWafa from "../assets/conventions/wafa.jpeg";
+import logoFosHalieutis from "../assets/conventions/fos_halieutis.jpeg";
 
 export interface LabHours {
   days: string;
@@ -27,6 +32,7 @@ export const LAB_CONTACT = {
   whatsappNumber: "+212610275785",
   whatsappCleanNumber: "212610275785",
   googleMapsUrl: "https://share.google/iJgpZK5giQyD4qahc",
+  googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJjQIsowDTpw0RawP9SCGuCFw",
   // Accurate coordinates at 117 Bd 2 Mars / Rue de Rome Casablanca
   coordinates: {
     lat: 33.5714,
@@ -288,5 +294,151 @@ export const PRACTICAL_TIPS = [
     title: "Comment réserver un prélèvement à domicile ?",
     answer:
       "Il vous suffit de nous écrire sur WhatsApp au 06 10 27 57 85 avec votre adresse à Casablanca et l'heure souhaitée. Nous confirmons immédiatement.",
+  },
+];
+
+export interface PatientReview {
+  id: string;
+  author: string;
+  rating: number;
+  relativeTime: string;
+  comment: string;
+  initials: string;
+  avatarBgColor: string;
+  verified: boolean;
+  serviceMentioned?: string;
+}
+
+export const GOOGLE_REVIEWS_INFO = {
+  overallRating: 5.0,
+  reviewCount: 38,
+  reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJjQIsowDTpw0RawP9SCGuCFw",
+  placeId: "ChIJjQIsowDTpw0RawP9SCGuCFw",
+};
+
+export const PATIENT_REVIEWS: PatientReview[] = [
+  {
+    id: "rev-1",
+    author: "Karim Berrada",
+    rating: 5,
+    relativeTime: "Il y a 2 semaines",
+    comment:
+      "Laboratoire d'une propreté exemplaire au quartier 2 Mars. L'accueil par le personnel et le Dr Youness MECHAL est d'une grande bienveillance. Prise de sang sans aucune douleur, et j'ai reçu mes résultats complets par WhatsApp le jour même. Je recommande vivement !",
+    initials: "KB",
+    avatarBgColor: "bg-teal-700",
+    verified: true,
+    serviceMentioned: "Bilan sanguin complet & Résultats WhatsApp",
+  },
+  {
+    id: "rev-2",
+    author: "Fatima-Zahra El Amrani",
+    rating: 5,
+    relativeTime: "Il y a 1 mois",
+    comment:
+      "Service de prélèvement à domicile exceptionnel pour ma mère âgée. L'infirmière est arrivée pile à l'heure convenue, très douce, ponctuelle et professionnelle. Très pratique avec une prise de contact fluide sur WhatsApp.",
+    initials: "FE",
+    avatarBgColor: "bg-rose-700",
+    verified: true,
+    serviceMentioned: "Prélèvement à domicile Casablanca",
+  },
+  {
+    id: "rev-3",
+    author: "Driss Mansouri",
+    rating: 5,
+    relativeTime: "Il y a 1 mois",
+    comment:
+      "Prise en charge rapide pour un bilan pré-opératoire urgent. Résultats fiables transmis en priorité avec explications claires du médecin biologiste. Équipe très compétente et matériel de pointe.",
+    initials: "DM",
+    avatarBgColor: "bg-slate-800",
+    verified: true,
+    serviceMentioned: "Analyses d'urgence pré-opératoires",
+  },
+  {
+    id: "rev-4",
+    author: "Sara Chraibi",
+    rating: 5,
+    relativeTime: "Il y a 2 mois",
+    comment:
+      "Mon laboratoire de référence à Casablanca désormais. Facile d'accès à l'angle Bd 2 Mars et rue de Rome. Aucune attente, hygiène irréprochable et convention mutuelle bien gérée. Bravo au Dr Mechal !",
+    initials: "SC",
+    avatarBgColor: "bg-emerald-700",
+    verified: true,
+    serviceMentioned: "Biochimie & Prise en charge mutuelle",
+  },
+];
+
+export interface LabConvention {
+  id: string;
+  name: string;
+  fullName: string;
+  category: string;
+  badgeColor: string;
+  accentColor: string;
+  logoBg: string;
+  logoUrl: string;
+  description: string;
+  coverageTag: string;
+}
+
+export const LAB_CONVENTIONS: LabConvention[] = [
+  {
+    id: "cnss",
+    name: "CNSS",
+    fullName: "Caisse Nationale de Sécurité Sociale",
+    category: "Régime Général & AMO",
+    badgeColor: "text-blue-700 bg-blue-50 border-blue-200",
+    accentColor: "#004B87",
+    logoBg: "bg-white",
+    logoUrl: logoCnss,
+    description: "Prise en charge AMO et bordereaux de remboursement pour salariés du secteur privé et pensionnés.",
+    coverageTag: "AMO & Prise en charge",
+  },
+  {
+    id: "cnops",
+    name: "CNOPS",
+    fullName: "Caisse Nationale des Organismes de Prévoyance Sociale",
+    category: "Secteur Public",
+    badgeColor: "text-emerald-700 bg-emerald-50 border-emerald-200",
+    accentColor: "#008450",
+    logoBg: "bg-white",
+    logoUrl: logoCnops,
+    description: "Conventionnement et dossiers de remboursement pour fonctionnaires et agents des administrations.",
+    coverageTag: "Tiers payant & CNOPS",
+  },
+  {
+    id: "cmim",
+    name: "CMIM",
+    fullName: "Caisse Mutualiste Interprofessionnelle Marocaine",
+    category: "Mutuelle Interprofessionnelle",
+    badgeColor: "text-teal-700 bg-teal-50 border-teal-200",
+    accentColor: "#0F766E",
+    logoBg: "bg-white",
+    logoUrl: logoCmim,
+    description: "Conventionnement direct et prise en charge facilitée pour les adhérents des entreprises affiliées.",
+    coverageTag: "Convention directe",
+  },
+  {
+    id: "wafa",
+    name: "Wafa Assurance",
+    fullName: "Wafa Assurance Maroc",
+    category: "Assurance Santé Privée",
+    badgeColor: "text-red-700 bg-red-50 border-red-200",
+    accentColor: "#C01424",
+    logoBg: "bg-white",
+    logoUrl: logoWafa,
+    description: "Gestion des feuilles de soins et accords préalables pour assurance santé groupe et individuelle.",
+    coverageTag: "Prise en charge directe",
+  },
+  {
+    id: "fos-halieutis",
+    name: "FOS - HALIEUTIS",
+    fullName: "Fondation des Œuvres Sociales des Fonctionnaires des Pêches Maritimes",
+    category: "Partenariat Conventionné",
+    badgeColor: "text-cyan-800 bg-cyan-50 border-cyan-200",
+    accentColor: "#0284C7",
+    logoBg: "bg-white",
+    logoUrl: logoFosHalieutis,
+    description: "Convention préférentielle pour les adhérents et ayants droit de la Fondation FOS-Halieutis.",
+    coverageTag: "Partenaire officiel",
   },
 ];

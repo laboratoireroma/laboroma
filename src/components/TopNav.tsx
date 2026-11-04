@@ -73,18 +73,24 @@ export const TopNav: React.FC = () => {
         </a>
 
         {/* Zone 2: Navigation Links (single line, unboxed, subtle hover) */}
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600">
           <a href="#services" className="hover:text-teal-800 transition-colors whitespace-nowrap">
             Services
           </a>
           <a href="#domicile" className="hover:text-teal-800 transition-colors whitespace-nowrap">
             À domicile
           </a>
+          <a href="#conventions" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+            Conventions
+          </a>
+          <a href="#avis" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+            Avis Patients
+          </a>
           <a href="#horaires-acces" className="hover:text-teal-800 transition-colors whitespace-nowrap">
             Horaires & Accès
           </a>
           <a href="#conseils" className="hover:text-teal-800 transition-colors whitespace-nowrap">
-            Conseils jeûne
+            Conseils
           </a>
         </nav>
 

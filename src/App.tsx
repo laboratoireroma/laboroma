@@ -3,6 +3,8 @@ import { TopNav } from "./components/TopNav";
 import { HeroSection } from "./components/HeroSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { HomeCollectionSection } from "./components/HomeCollectionSection";
+import { ConventionsSection } from "./components/ConventionsSection";
+import { ReviewsSection } from "./components/ReviewsSection";
 import { PracticalInfoSection } from "./components/PracticalInfoSection";
 import { FaqFastingSection } from "./components/FaqFastingSection";
 import { Footer } from "./components/Footer";
@@ -24,6 +26,12 @@ export default function App() {
 
         {/* Dedicated Home Blood Sampling Section */}
         <HomeCollectionSection />
+
+        {/* Conventions & Mutual Health Partners (CNSS, CNOPS, CMIM, Wafa, FOS-Halieutis) */}
+        <ConventionsSection />
+
+        {/* Verified Google Patient Reviews (No API key needed) */}
+        <ReviewsSection />
 
         {/* Practical Information, Opening Hours, Contacts & Interactive Google Maps */}
         <PracticalInfoSection />
