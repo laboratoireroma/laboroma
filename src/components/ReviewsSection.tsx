@@ -1,9 +1,9 @@
-import React from "react";
-import { PATIENT_REVIEWS, GOOGLE_REVIEWS_INFO } from "../data/labInfo";
-import { Star, MessageSquarePlus, ExternalLink, ShieldCheck, CheckCircle2 } from "lucide-react";
+import React, { useEffect } from "react";
+import { GOOGLE_REVIEWS_INFO } from "../data/labInfo";
+import { MessageSquarePlus, ExternalLink } from "lucide-react";
 
 /**
- * Clean Google "G" icon strictly for the external review button affordance.
+ * Official 4-color Google "G" icon.
  */
 const GoogleLogoSvg: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
   <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -27,124 +27,89 @@ const GoogleLogoSvg: React.FC<{ className?: string }> = ({ className = "w-4 h-4"
 );
 
 export const ReviewsSection: React.FC = () => {
+  useEffect(() => {
+    // Inject or re-trigger SociableKIT widget script
+    const SCRIPT_ID = "sociablekit-google-reviews-script";
+    const existingScript = document.getElementById(SCRIPT_ID) as HTMLScriptElement | null;
+
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.id = SCRIPT_ID;
+      script.src = "https://widgets.sociablekit.com/google-reviews/widget.js";
+      script.defer = true;
+      script.async = true;
+      document.body.appendChild(script);
+    } else {
+      // Re-trigger widget parsing if script already exists
+      try {
+        // @ts-expect-error SociableKit adds a global object or function
+        if (window.sk_google_reviews && typeof window.sk_google_reviews === "function") {
+          // @ts-expect-error global function
+          window.sk_google_reviews();
+        }
+      } catch {
+        // Ignore if not defined yet
+      }
+    }
+  }, []);
+
   return (
     <section id="avis" className="py-12 sm:py-16 bg-slate-50 border-b border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Section Header with Overall Patient Satisfaction */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold tracking-wider uppercase text-teal-800 block mb-1">
-              Confiance & Témoignages
-            </span>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold mb-2 shadow-xs">
+              <GoogleLogoSvg className="w-3.5 h-3.5" />
+              <span>Avis Google Maps Officiels</span>
+            </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               Avis de nos Patients
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-2">
-              Retours d'expérience de nos patients accueillis au laboratoire du quartier 2 Mars ou
-              prélevés à domicile à Casablanca.
+              Consultez en direct les avis et évaluations authentiques déposés par nos patients sur
+              notre fiche Google Maps.
             </p>
           </div>
 
-          {/* Rating Summary Card (Patient satisfaction, honest and clean) */}
-          <div className="flex items-center gap-3 p-3.5 bg-white rounded-2xl border border-slate-200/90 shadow-xs self-start md:self-auto">
-            <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-500 shrink-0">
-              <Star className="w-6 h-6 fill-amber-400 text-amber-400" />
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-lg font-extrabold text-slate-900 font-mono">5.0</span>
-                <div className="flex text-amber-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
-                  ))}
-                </div>
-              </div>
-              <span className="text-[11px] text-teal-800 font-medium flex items-center gap-1">
-                <CheckCircle2 className="w-3 h-3 text-teal-600" />
-                <span>Recommandé par nos patients</span>
-              </span>
-            </div>
-          </div>
+          {/* Quick CTA to write review */}
+          <a
+            href={GOOGLE_REVIEWS_INFO.reviewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-bold text-xs sm:text-sm transition-all shadow-xs hover:shadow shrink-0 self-start md:self-auto"
+          >
+            <MessageSquarePlus className="w-4 h-4" />
+            <span>Donner votre avis</span>
+          </a>
         </div>
 
-        {/* Reviews Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
-          {PATIENT_REVIEWS.map((review) => (
-            <div
-              key={review.id}
-              className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow duration-200"
-            >
-              <div>
-                {/* Review Header: Patient + Verified Patient Badge */}
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <div className="flex items-center gap-3">
-                    <div
-                      className={`w-10 h-10 rounded-full ${review.avatarBgColor} text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-xs`}
-                    >
-                      {review.initials}
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-bold text-slate-900 leading-tight">
-                        {review.author}
-                      </h3>
-                      <span className="text-[11px] text-slate-400 font-medium">
-                        {review.relativeTime}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Clean Patient Verified Badge */}
-                  <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-teal-50 border border-teal-200/70 text-[11px] font-semibold text-teal-800 shrink-0">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-teal-600" />
-                    <span>Patient vérifié</span>
-                  </div>
-                </div>
-
-                {/* 5 Golden Stars */}
-                <div className="flex items-center gap-1 mb-3 text-amber-400" aria-label="5 étoiles sur 5">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-
-                {/* Comment Text */}
-                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed italic">
-                  "{review.comment}"
-                </p>
-              </div>
-
-              {/* Service Mentioned Tag */}
-              {review.serviceMentioned && (
-                <div className="pt-3 mt-4 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-teal-800 font-medium">
-                  <ShieldCheck className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                  <span>{review.serviceMentioned}</span>
-                </div>
-              )}
-            </div>
-          ))}
+        {/* SociableKIT Google Reviews Widget Container */}
+        <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/90 shadow-sm min-h-[320px]">
+          <div className="sk-ww-google-reviews" data-embed-id="25727386"></div>
         </div>
 
-        {/* Elegant Action CTAs Section pointing to Google Maps Review Form */}
-        <div className="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        {/* Footer CTAs */}
+        <div className="mt-8 p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div className="space-y-1">
             <div className="flex items-center justify-center sm:justify-start gap-2 text-slate-900 font-bold text-sm sm:text-base">
               <GoogleLogoSvg className="w-5 h-5 shrink-0" />
-              <span>Vous avez été accueilli au Laboratoire Roma ?</span>
+              <span>Vous avez effectué des analyses au Laboratoire Roma ?</span>
             </div>
             <p className="text-xs text-slate-500">
-              Partagez votre avis sur notre fiche Google Maps pour aider d'autres patients à Casablanca.
+              Votre retour d'expérience compte énormément pour le Dr MECHAL Youness et toute son équipe.
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
             <a
               href={GOOGLE_REVIEWS_INFO.reviewUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-bold text-xs sm:text-sm transition-all shadow-xs hover:shadow"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white font-bold text-xs sm:text-sm transition-all shadow-xs"
             >
               <MessageSquarePlus className="w-4 h-4" />
-              <span>Laisser un avis sur Google Maps</span>
+              <span>Laisser un avis sur Google</span>
             </a>
 
             <a
