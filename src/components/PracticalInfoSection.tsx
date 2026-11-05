@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { LAB_CONTACT, LAB_SCHEDULE, getLabCurrentStatus, getWhatsAppLink } from "../data/labInfo";
+import {
+  LAB_CONTACT,
+  LAB_SCHEDULE,
+  getLabCurrentStatus,
+  getActiveSpecialSchedules,
+  getWhatsAppLink,
+  SpecialSchedule,
+} from "../data/labInfo";
 import {
   MapPin,
   Clock,
@@ -13,10 +20,14 @@ import {
 
 export const PracticalInfoSection: React.FC = () => {
   const [labStatus, setLabStatus] = useState(getLabCurrentStatus());
+  const [activeSpecialSchedules, setActiveSpecialSchedules] = useState<SpecialSchedule[]>(() =>
+    getActiveSpecialSchedules()
+  );
 
   useEffect(() => {
     const timer = setInterval(() => {
       setLabStatus(getLabCurrentStatus());
+      setActiveSpecialSchedules(getActiveSpecialSchedules());
     }, 60000);
     return () => clearInterval(timer);
   }, []);
@@ -153,6 +164,36 @@ export const PracticalInfoSection: React.FC = () => {
                   </div>
                 ))}
               </div>
+
+              {/* Special Opening Hours Notice (Auto-hides once the holiday has passed) */}
+              {activeSpecialSchedules.length > 0 && (
+                <div className="mt-3 p-3.5 rounded-xl bg-amber-50/90 border border-amber-200/90 text-amber-950 space-y-2">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-amber-900 uppercase tracking-wider">
+                    <Calendar className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                    <span>Ouverture Jours Fériés (08h30 – 14h00)</span>
+                  </div>
+
+                  <div className="space-y-1.5 text-xs">
+                    {activeSpecialSchedules.map((spec) => (
+                      <div
+                        key={spec.date}
+                        className="flex items-center justify-between py-1 border-b border-amber-200/60 last:border-0 font-medium"
+                      >
+                        <span className="text-amber-900">
+                          {spec.label} ({spec.occasion})
+                        </span>
+                        <span className="font-mono font-bold text-amber-950 bg-amber-100/80 px-2 py-0.5 rounded">
+                          {spec.hours}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="text-[11px] text-amber-800 leading-tight pt-0.5">
+                    Le laboratoire vous accueille pour toutes vos analyses et prélèvements urgents en matinée continue.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
 

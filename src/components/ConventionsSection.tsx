@@ -130,7 +130,7 @@ export const ConventionsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Reassuring Banner */}
+        {/* Reassuring Banner & Pro Convention Link */}
         <div className="mt-8 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-slate-700">
           <div className="flex items-center gap-3">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
@@ -150,6 +150,25 @@ export const ConventionsSection: React.FC = () => {
           >
             <span>Envoyer ma carte mutuelle</span>
             <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        {/* Institutional & Enterprise Callout */}
+        <div className="mt-4 p-4 rounded-2xl bg-teal-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-center sm:text-left">
+            <h4 className="text-sm font-bold tracking-tight">
+              Vous représentez une entreprise, une mutuelle ou une clinique ?
+            </h4>
+            <p className="text-xs text-teal-200 mt-0.5">
+              Établissez une convention de tiers-payant ou un accord de partenariat médical direct avec le Laboratoire Roma.
+            </p>
+          </div>
+          <a
+            href="#partenariat"
+            className="shrink-0 px-4 py-2.5 rounded-xl bg-white hover:bg-teal-50 text-teal-900 font-bold text-xs shadow-xs transition-all whitespace-nowrap inline-flex items-center gap-1.5"
+          >
+            <span>Demander un conventionnement</span>
+            <ArrowRight className="w-3.5 h-3.5 text-teal-700" />
           </a>
         </div>
       </div>

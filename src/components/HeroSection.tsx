@@ -1,8 +1,16 @@
-import React from "react";
-import { LAB_CONTACT, getWhatsAppLink } from "../data/labInfo";
+import React, { useState, useEffect } from "react";
+import { LAB_CONTACT, getWhatsAppLink, getActiveSpecialSchedules } from "../data/labInfo";
 import { MessageSquare, Phone, Navigation, Clock, ShieldCheck, MapPin, Sparkles } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
+  const [activeSpecialSchedules, setActiveSpecialSchedules] = useState(getActiveSpecialSchedules());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSpecialSchedules(getActiveSpecialSchedules());
+    }, 60000);
+    return () => clearInterval(timer);
+  }, []);
   return (
     <section id="accueil" className="relative pt-6 pb-12 sm:pt-10 sm:pb-16 bg-gradient-to-b from-white via-slate-50 to-white overflow-hidden">
       {/* Subtle background radial glow matching brand teal */}
@@ -174,6 +182,27 @@ export const HeroSection: React.FC = () => {
                   <span className="text-xs font-bold text-slate-900 font-mono">08h00 – 13h00</span>
                 </div>
               </div>
+
+              {/* Special Holidays Highlight (Auto-hides once the dates have passed) */}
+              {activeSpecialSchedules.length > 0 && (
+                <div className="mt-2.5 p-2.5 rounded-xl bg-amber-50 border border-amber-200/80 text-left flex items-center justify-between gap-2">
+                  <div className="text-[11px] leading-tight text-amber-900 font-semibold">
+                    <span className="block font-bold">
+                      {activeSpecialSchedules.length > 1
+                        ? `Ouvert les ${activeSpecialSchedules.map((s) => s.formattedDate).join(" & ")}`
+                        : `Ouvert le ${activeSpecialSchedules[0].formattedDate} (${activeSpecialSchedules[0].occasion})`}
+                    </span>
+                    <span className="text-[10px] text-amber-700 font-normal">
+                      {activeSpecialSchedules.length > 1
+                        ? "Marche Verte & Fête Indépendance"
+                        : "Jour férié national"}
+                    </span>
+                  </div>
+                  <span className="font-mono font-bold text-amber-950 bg-amber-200/70 px-2 py-1 rounded text-xs shrink-0">
+                    {activeSpecialSchedules[0].hours}
+                  </span>
+                </div>
+              )}
 
               <div className="mt-4 pt-3 flex items-center justify-center gap-1.5 text-xs text-teal-800 font-medium">
                 <MapPin className="w-3.5 h-3.5 text-red-600 shrink-0" />

@@ -1,17 +1,65 @@
 import React, { useState, useEffect } from "react";
-import { LAB_CONTACT, getWhatsAppLink, getLabCurrentStatus } from "../data/labInfo";
-import { Phone, MessageSquare, MapPin } from "lucide-react";
+import {
+  LAB_CONTACT,
+  getWhatsAppLink,
+  getLabCurrentStatus,
+  getActiveSpecialSchedules,
+} from "../data/labInfo";
+import { Phone, MessageSquare, MapPin, Briefcase, Handshake, Menu, X, HeartPulse } from "lucide-react";
 
-export const TopNav: React.FC = () => {
+interface TopNavProps {
+  currentRoute?: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter";
+  onNavigate?: (route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter") => void;
+}
+
+export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigate }) => {
   const [labStatus, setLabStatus] = useState(getLabCurrentStatus());
+  const [activeSpecialSchedules, setActiveSpecialSchedules] = useState(getActiveSpecialSchedules());
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     // Update status every 60s
     const timer = setInterval(() => {
       setLabStatus(getLabCurrentStatus());
+      setActiveSpecialSchedules(getActiveSpecialSchedules());
     }, 60000);
     return () => clearInterval(timer);
   }, []);
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+    setMobileMenuOpen(false);
+    if (target === "home") {
+      if (onNavigate) {
+        onNavigate("home");
+      } else {
+        window.location.hash = "";
+      }
+    } else if (target === "recrutement") {
+      if (onNavigate) {
+        onNavigate("recrutement");
+      } else {
+        window.location.hash = "#recrutement";
+      }
+    } else if (target === "partenariat") {
+      if (onNavigate) {
+        onNavigate("partenariat");
+      } else {
+        window.location.hash = "#partenariat";
+      }
+    } else if (target === "sensibilisation-helicobacter") {
+      if (onNavigate) {
+        onNavigate("sensibilisation-helicobacter");
+      } else {
+        window.location.hash = "#sensibilisation-helicobacter";
+      }
+    } else {
+      // It's a section anchor like #services, #conventions
+      if (currentRoute !== "home") {
+        if (onNavigate) onNavigate("home");
+        // Let the hash navigation take care of scrolling
+      }
+    }
+  };
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
@@ -28,6 +76,18 @@ export const TopNav: React.FC = () => {
               <span className="font-medium text-slate-100">{labStatus.statusText}</span>
               <span className="text-slate-400">· {labStatus.subText}</span>
             </span>
+
+            {activeSpecialSchedules.length > 0 && (
+              <span className="hidden xl:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-200 border border-amber-400/30 text-[11px] font-medium">
+                <span>
+                  📅 Férié{activeSpecialSchedules.length > 1 ? "s" : ""} : Ouvert{" "}
+                  {activeSpecialSchedules.length > 1
+                    ? `les ${activeSpecialSchedules.map((s) => s.formattedDate.slice(0, 5)).join(" & ")}`
+                    : `le ${activeSpecialSchedules[0].formattedDate.slice(0, 5)}`}{" "}
+                  (08h30 – 14h00)
+                </span>
+              </span>
+            )}
           </div>
 
           <div className="flex items-center gap-4 text-slate-300">
@@ -52,10 +112,14 @@ export const TopNav: React.FC = () => {
         </div>
       </div>
 
-      {/* Main Top Bar matching Top Bar Contract */}
+      {/* Main Top Bar */}
       <div className="max-w-6xl mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between gap-4">
         {/* Zone 1: Single brand wordmark with logo */}
-        <a href="#accueil" className="flex items-center gap-2.5 shrink-0 group">
+        <a
+          href="#accueil"
+          onClick={(e) => handleLinkClick(e, "home")}
+          className="flex items-center gap-2.5 shrink-0 group"
+        >
           <img
             src={LAB_CONTACT.logoPath}
             alt="Logo Laboratoire Roma"
@@ -72,29 +136,88 @@ export const TopNav: React.FC = () => {
           </div>
         </a>
 
-        {/* Zone 2: Navigation Links (single line, unboxed, subtle hover) */}
-        <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600">
-          <a href="#services" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+        {/* Zone 2: Navigation Links (Desktop) */}
+        <nav className="hidden lg:flex items-center gap-5 text-xs font-semibold text-slate-600">
+          <a
+            href="#services"
+            onClick={(e) => handleLinkClick(e, "#services")}
+            className="hover:text-teal-800 transition-colors whitespace-nowrap"
+          >
             Services
           </a>
-          <a href="#domicile" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+          <a
+            href="#domicile"
+            onClick={(e) => handleLinkClick(e, "#domicile")}
+            className="hover:text-teal-800 transition-colors whitespace-nowrap"
+          >
             À domicile
           </a>
-          <a href="#conventions" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+          <a
+            href="#conventions"
+            onClick={(e) => handleLinkClick(e, "#conventions")}
+            className="hover:text-teal-800 transition-colors whitespace-nowrap"
+          >
             Conventions
           </a>
-          <a href="#avis" className="hover:text-teal-800 transition-colors whitespace-nowrap">
-            Avis Patients
+          <a
+            href="#avis"
+            onClick={(e) => handleLinkClick(e, "#avis")}
+            className="hover:text-teal-800 transition-colors whitespace-nowrap"
+          >
+            Avis
           </a>
-          <a href="#horaires-acces" className="hover:text-teal-800 transition-colors whitespace-nowrap">
+          <a
+            href="#horaires-acces"
+            onClick={(e) => handleLinkClick(e, "#horaires-acces")}
+            className="hover:text-teal-800 transition-colors whitespace-nowrap"
+          >
             Horaires & Accès
           </a>
-          <a href="#conseils" className="hover:text-teal-800 transition-colors whitespace-nowrap">
-            Conseils
+
+          {/* Sensibilisation & Santé : Helicobacter pylori */}
+          <a
+            href="#sensibilisation-helicobacter"
+            onClick={(e) => handleLinkClick(e, "sensibilisation-helicobacter")}
+            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors whitespace-nowrap ${
+              currentRoute === "sensibilisation-helicobacter"
+                ? "bg-teal-50 text-teal-900 font-bold border border-teal-200/80"
+                : "hover:text-teal-800 hover:bg-slate-100/80 text-emerald-800"
+            }`}
+          >
+            <HeartPulse className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Santé : H. pylori</span>
+          </a>
+
+          {/* New Page: Recrutement */}
+          <a
+            href="#recrutement"
+            onClick={(e) => handleLinkClick(e, "recrutement")}
+            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors whitespace-nowrap ${
+              currentRoute === "recrutement"
+                ? "bg-teal-50 text-teal-900 font-bold border border-teal-200/80"
+                : "hover:text-teal-800 hover:bg-slate-100/80"
+            }`}
+          >
+            <Briefcase className="w-3.5 h-3.5 text-teal-700" />
+            <span>Recrutement</span>
+          </a>
+
+          {/* New Page: Partenariats */}
+          <a
+            href="#partenariat"
+            onClick={(e) => handleLinkClick(e, "partenariat")}
+            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors whitespace-nowrap ${
+              currentRoute === "partenariat"
+                ? "bg-teal-50 text-teal-900 font-bold border border-teal-200/80"
+                : "hover:text-teal-800 hover:bg-slate-100/80"
+            }`}
+          >
+            <Handshake className="w-3.5 h-3.5 text-teal-700" />
+            <span>Partenariats</span>
           </a>
         </nav>
 
-        {/* Zone 3: Quick Action Group */}
+        {/* Zone 3: Quick Action Group & Mobile Toggle */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <a
             href={LAB_CONTACT.googleMapsUrl}
@@ -124,8 +247,115 @@ export const TopNav: React.FC = () => {
             <MessageSquare className="w-4 h-4" />
             <span>WhatsApp</span>
           </a>
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 lg:hidden"
+            aria-label="Ouvrir le menu"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Drawer Navigation */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-3 shadow-lg animate-in slide-in-from-top duration-200">
+          <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
+            <a
+              href="#services"
+              onClick={(e) => handleLinkClick(e, "#services")}
+              className="p-2.5 rounded-xl bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-900 transition-colors"
+            >
+              Services & Analyses
+            </a>
+            <a
+              href="#domicile"
+              onClick={(e) => handleLinkClick(e, "#domicile")}
+              className="p-2.5 rounded-xl bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-900 transition-colors"
+            >
+              À domicile
+            </a>
+            <a
+              href="#conventions"
+              onClick={(e) => handleLinkClick(e, "#conventions")}
+              className="p-2.5 rounded-xl bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-900 transition-colors"
+            >
+              Conventions & Mutuelles
+            </a>
+            <a
+              href="#avis"
+              onClick={(e) => handleLinkClick(e, "#avis")}
+              className="p-2.5 rounded-xl bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-900 transition-colors"
+            >
+              Avis Patients
+            </a>
+            <a
+              href="#horaires-acces"
+              onClick={(e) => handleLinkClick(e, "#horaires-acces")}
+              className="p-2.5 rounded-xl bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-900 transition-colors col-span-2"
+            >
+              Horaires & Accès au laboratoire
+            </a>
+          </div>
+
+          <div className="pt-2 border-t border-slate-100 space-y-2">
+            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider px-1">
+              Espace Professionnel & Carrières
+            </div>
+
+            <a
+              href="#sensibilisation-helicobacter"
+              onClick={(e) => handleLinkClick(e, "sensibilisation-helicobacter")}
+              className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all ${
+                currentRoute === "sensibilisation-helicobacter"
+                  ? "bg-teal-800 text-white"
+                  : "bg-emerald-50/70 hover:bg-emerald-100 text-emerald-950 border border-emerald-200/60"
+              }`}
+            >
+              <HeartPulse className="w-4 h-4 text-emerald-600" />
+              <div>
+                <p className="font-bold">Santé : Helicobacter pylori</p>
+                <p className="text-[10px] opacity-80 font-normal">Dépistage non invasif & Conseils bien-être</p>
+              </div>
+            </a>
+
+            <a
+              href="#recrutement"
+              onClick={(e) => handleLinkClick(e, "recrutement")}
+              className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all ${
+                currentRoute === "recrutement"
+                  ? "bg-teal-800 text-white"
+                  : "bg-teal-50/70 hover:bg-teal-100 text-teal-900 border border-teal-200/60"
+              }`}
+            >
+              <Briefcase className="w-4 h-4 text-teal-700" />
+              <div>
+                <p className="font-bold">Candidature spontanée</p>
+                <p className="text-[10px] opacity-80 font-normal">Rejoindre l'équipe du Laboratoire Roma</p>
+              </div>
+            </a>
+
+            <a
+              href="#partenariat"
+              onClick={(e) => handleLinkClick(e, "partenariat")}
+              className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all ${
+                currentRoute === "partenariat"
+                  ? "bg-teal-800 text-white"
+                  : "bg-teal-50/70 hover:bg-teal-100 text-teal-900 border border-teal-200/60"
+              }`}
+            >
+              <Handshake className="w-4 h-4 text-teal-700" />
+              <div>
+                <p className="font-bold">Conventions & Partenariats</p>
+                <p className="text-[10px] opacity-80 font-normal">Entreprises, mutuelles et cliniques</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

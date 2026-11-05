@@ -33,6 +33,8 @@ export const LAB_CONTACT = {
   whatsappCleanNumber: "212610275785",
   googleMapsUrl: "https://share.google/iJgpZK5giQyD4qahc",
   googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJjQIsowDTpw0RawP9SCGuCFw",
+  emailDirection: "directionlaboratoireroma@gmail.com",
+  emailSecretariat: "secretariat.laboratoireroma@gmail.com",
   // Accurate coordinates at 117 Bd 2 Mars / Rue de Rome Casablanca
   coordinates: {
     lat: 33.5714,
@@ -63,7 +65,90 @@ export const getWhatsAppOrdonnanceLink = (): string => {
   return `https://wa.me/${LAB_CONTACT.whatsappCleanNumber}?text=${text}`;
 };
 
-export const LAB_SCHEDULE = [
+export interface SpecialSchedule {
+  date: string; // YYYY-MM-DD
+  formattedDate: string; // "06-11-2026"
+  label: string; // "Vendredi 6 Novembre 2026"
+  occasion: string; // "Anniversaire de la Marche Verte"
+  hours: string; // "08h30 – 14h00"
+  openHour: number;
+  openMinute: number;
+  closeHour: number;
+  closeMinute: number;
+}
+
+export const LAB_SPECIAL_SCHEDULES: SpecialSchedule[] = [
+  {
+    date: "2026-11-06",
+    formattedDate: "06-11-2026",
+    label: "Vendredi 6 Novembre 2026",
+    occasion: "Marche Verte",
+    hours: "08h30 – 14h00",
+    openHour: 8,
+    openMinute: 30,
+    closeHour: 14,
+    closeMinute: 0,
+  },
+  {
+    date: "2026-11-18",
+    formattedDate: "18-11-2026",
+    label: "Mercredi 18 Novembre 2026",
+    occasion: "Fête de l'Indépendance",
+    hours: "08h30 – 14h00",
+    openHour: 8,
+    openMinute: 30,
+    closeHour: 14,
+    closeMinute: 0,
+  },
+];
+
+/**
+ * Returns only the holiday/special schedules that have not yet passed in Casablanca time.
+ * Once a holiday passes (after its closing hour or once the date has passed), it is automatically filtered out.
+ */
+export const getActiveSpecialSchedules = (): SpecialSchedule[] => {
+  try {
+    const now = new Date();
+    const casablancaString = now.toLocaleString("en-US", {
+      timeZone: "Africa/Casablanca",
+    });
+    const casaDate = new Date(casablancaString);
+    const currentYear = casaDate.getFullYear();
+    const currentMonth = String(casaDate.getMonth() + 1).padStart(2, "0");
+    const currentDate = String(casaDate.getDate()).padStart(2, "0");
+    const currentYyyyMmDd = `${currentYear}-${currentMonth}-${currentDate}`;
+    const currentMinutes = casaDate.getHours() * 60 + casaDate.getMinutes();
+
+    return LAB_SPECIAL_SCHEDULES.filter((s) => {
+      // Future date
+      if (s.date > currentYyyyMmDd) {
+        return true;
+      }
+      // Current date: active until closing time (14h00)
+      if (s.date === currentYyyyMmDd) {
+        const closeMinutes = s.closeHour * 60 + s.closeMinute;
+        return currentMinutes < closeMinutes;
+      }
+      // Past date: expired / passed
+      return false;
+    });
+  } catch {
+    return LAB_SPECIAL_SCHEDULES;
+  }
+};
+
+export interface LabScheduleItem {
+  days: string;
+  hours: string;
+  openHour: number;
+  openMinute: number;
+  closeHour: number;
+  closeMinute: number;
+  isClosed?: boolean;
+  isSpecial?: boolean;
+}
+
+export const LAB_SCHEDULE: LabScheduleItem[] = [
   {
     days: "Lundi au Vendredi",
     hours: "07h30 – 18h30 (Journée continue)",
@@ -100,7 +185,8 @@ export interface LabStatus {
 }
 
 /**
- * Calculates whether the lab is currently open according to Casablanca local time (Africa/Casablanca).
+ * Calculates whether the lab is currently open according to Casablanca local time (Africa/Casablanca),
+ * taking into account special opening hours on national holidays (06-11-2026 & 18-11-2026).
  */
 export const getLabCurrentStatus = (): LabStatus => {
   try {
@@ -115,7 +201,39 @@ export const getLabCurrentStatus = (): LabStatus => {
     const minutes = casaDate.getMinutes();
     const currentTotalMinutes = hours * 60 + minutes;
 
-    // Sunday (0)
+    const year = casaDate.getFullYear();
+    const month = String(casaDate.getMonth() + 1).padStart(2, "0");
+    const dateNum = String(casaDate.getDate()).padStart(2, "0");
+    const yyyyMmDd = `${year}-${month}-${dateNum}`;
+
+    // 1. Check for exceptional / special schedule (e.g. 06-11-2026 & 18-11-2026: 08h30 - 14h00)
+    const specialToday = LAB_SPECIAL_SCHEDULES.find((s) => s.date === yyyyMmDd);
+    if (specialToday) {
+      const openMinutes = specialToday.openHour * 60 + specialToday.openMinute; // 08:30 -> 510
+      const closeMinutes = specialToday.closeHour * 60 + specialToday.closeMinute; // 14:00 -> 840
+
+      if (currentTotalMinutes >= openMinutes && currentTotalMinutes < closeMinutes) {
+        return {
+          isOpen: true,
+          statusText: `Ouvert actuellement (${specialToday.occasion})`,
+          subText: `Ferme aujourd'hui à 14h00 (Horaires spéciaux : ${specialToday.hours})`,
+        };
+      } else if (currentTotalMinutes < openMinutes) {
+        return {
+          isOpen: false,
+          statusText: `Fermé actuellement (${specialToday.occasion})`,
+          subText: `Ouvre aujourd'hui à 08h30 (Ouvert de ${specialToday.hours})`,
+        };
+      } else {
+        return {
+          isOpen: false,
+          statusText: "Fermé pour la journée",
+          subText: "Fermé à 14h00 · Réouverture dès demain matin",
+        };
+      }
+    }
+
+    // 2. Sunday (0)
     if (day === 0) {
       return {
         isOpen: false,
@@ -124,7 +242,7 @@ export const getLabCurrentStatus = (): LabStatus => {
       };
     }
 
-    // Saturday (6)
+    // 3. Saturday (6)
     if (day === 6) {
       const openMinutes = 8 * 60; // 08:00
       const closeMinutes = 13 * 60; // 13:00
@@ -149,7 +267,7 @@ export const getLabCurrentStatus = (): LabStatus => {
       }
     }
 
-    // Monday to Friday (1 - 5)
+    // 4. Monday to Friday (1 - 5)
     const openMinutes = 7 * 60 + 30; // 07:30
     const closeMinutes = 18 * 60 + 30; // 18:30
     if (currentTotalMinutes >= openMinutes && currentTotalMinutes < closeMinutes) {
@@ -165,6 +283,23 @@ export const getLabCurrentStatus = (): LabStatus => {
         subText: "Ouvre aujourd'hui à 07h30",
       };
     } else {
+      // Check if tomorrow has a special schedule
+      const tomorrow = new Date(casaDate);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const tomYear = tomorrow.getFullYear();
+      const tomMonth = String(tomorrow.getMonth() + 1).padStart(2, "0");
+      const tomDate = String(tomorrow.getDate()).padStart(2, "0");
+      const tomYyyyMmDd = `${tomYear}-${tomMonth}-${tomDate}`;
+      const specialTomorrow = LAB_SPECIAL_SCHEDULES.find((s) => s.date === tomYyyyMmDd);
+
+      if (specialTomorrow) {
+        return {
+          isOpen: false,
+          statusText: "Fermé pour la journée",
+          subText: `Demain ${specialTomorrow.occasion} : ouvert de ${specialTomorrow.hours}`,
+        };
+      }
+
       return {
         isOpen: false,
         statusText: "Fermé pour la journée",
