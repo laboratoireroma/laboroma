@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { LAB_CONTACT, getWhatsAppLink, getActiveSpecialSchedules } from "../data/labInfo";
-import { MessageSquare, Phone, Navigation, Clock, ShieldCheck, MapPin, Sparkles } from "lucide-react";
+import { MessageSquare, Phone, Navigation, Clock, ShieldCheck, MapPin, Sparkles, BookOpen } from "lucide-react";
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onNavigate?: (
+    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques"
+  ) => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
   const [activeSpecialSchedules, setActiveSpecialSchedules] = useState(getActiveSpecialSchedules());
 
   useEffect(() => {
@@ -25,9 +31,23 @@ export const HeroSection: React.FC = () => {
             <span>Direction : {LAB_CONTACT.director}</span>
           </span>
           <span className="hidden sm:inline text-slate-300">·</span>
-          <span className="text-slate-600 hidden sm:inline">Biologiste Médical Spécialiste</span>
+          <span className="text-slate-600 hidden sm:inline">Spécialiste en Biologie Médicale</span>
           <span className="hidden md:inline text-slate-300">·</span>
-          <span className="text-slate-600 hidden md:inline">Casablanca (Angle 2 Mars / Rome)</span>
+          <a
+            href="#publications-scientifiques"
+            onClick={(e) => {
+              e.preventDefault();
+              if (onNavigate) {
+                onNavigate("publications-scientifiques");
+              } else {
+                window.location.hash = "#publications-scientifiques";
+              }
+            }}
+            className="inline-flex items-center gap-1 text-teal-800 hover:text-teal-950 font-bold hover:underline transition-colors"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-teal-700" />
+            <span>Travaux & Publications Scientifiques</span>
+          </a>
         </div>
 
         {/* 2-Column Split: Headline & Value Prop + Visual Brand Anchor */}

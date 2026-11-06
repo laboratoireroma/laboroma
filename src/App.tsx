@@ -10,17 +10,28 @@ import { FaqFastingSection } from "./components/FaqFastingSection";
 import { CandidaturePage } from "./components/CandidaturePage";
 import { PartenariatPage } from "./components/PartenariatPage";
 import { HelicobacterPyloriPage } from "./components/HelicobacterPyloriPage";
+import { PublicationsScientifiquesPage } from "./components/PublicationsScientifiquesPage";
 import { Footer } from "./components/Footer";
 import { MobileBottomBar } from "./components/MobileBottomBar";
 
-type RouteType = "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter";
+type RouteType =
+  | "home"
+  | "recrutement"
+  | "partenariat"
+  | "sensibilisation-helicobacter"
+  | "publications-scientifiques";
 
 function parseHash(hash: string): RouteType {
   const cleanHash = hash.replace(/^#\/?/, "").toLowerCase();
   if (cleanHash === "recrutement" || cleanHash === "candidature" || cleanHash === "candidatures") {
     return "recrutement";
   }
-  if (cleanHash === "partenariat" || cleanHash === "partenariats" || cleanHash === "conventionnement" || cleanHash === "convention-partenariat") {
+  if (
+    cleanHash === "partenariat" ||
+    cleanHash === "partenariats" ||
+    cleanHash === "conventionnement" ||
+    cleanHash === "convention-partenariat"
+  ) {
     return "partenariat";
   }
   if (
@@ -31,6 +42,17 @@ function parseHash(hash: string): RouteType {
     cleanHash === "sensibilisation"
   ) {
     return "sensibilisation-helicobacter";
+  }
+  if (
+    cleanHash === "publications-scientifiques" ||
+    cleanHash === "publications" ||
+    cleanHash === "publications-dr-mechal" ||
+    cleanHash === "publications-dr-mechal-youness" ||
+    cleanHash === "recherche" ||
+    cleanHash === "travaux-scientifiques" ||
+    cleanHash === "expertise-scientifique"
+  ) {
+    return "publications-scientifiques";
   }
   return "home";
 }
@@ -66,6 +88,8 @@ export default function App() {
       window.location.hash = "#partenariat";
     } else if (newRoute === "sensibilisation-helicobacter") {
       window.location.hash = "#sensibilisation-helicobacter";
+    } else if (newRoute === "publications-scientifiques") {
+      window.location.hash = "#publications-scientifiques";
     } else {
       window.location.hash = "";
       setRoute("home");
@@ -86,10 +110,12 @@ export default function App() {
           <PartenariatPage onBack={() => navigateTo("home")} />
         ) : route === "sensibilisation-helicobacter" ? (
           <HelicobacterPyloriPage onBack={() => navigateTo("home")} />
+        ) : route === "publications-scientifiques" ? (
+          <PublicationsScientifiquesPage onBack={() => navigateTo("home")} />
         ) : (
           <>
             {/* Hero Section with 3 Main Quick Action Buttons */}
-            <HeroSection />
+            <HeroSection onNavigate={navigateTo} />
 
             {/* Key Medical Services & Analyses */}
             <ServicesSection />

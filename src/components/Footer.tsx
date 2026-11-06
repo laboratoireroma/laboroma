@@ -1,15 +1,19 @@
 import React from "react";
 import { LAB_CONTACT, getWhatsAppLink, getActiveSpecialSchedules, SpecialSchedule } from "../data/labInfo";
-import { Phone, MessageSquare, MapPin, Navigation, ShieldCheck, Mail, Briefcase, Handshake, HeartPulse } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Navigation, ShieldCheck, Mail, Briefcase, Handshake, HeartPulse, BookOpen } from "lucide-react";
 
 interface FooterProps {
-  onNavigate?: (route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter") => void;
+  onNavigate?: (
+    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques"
+  ) => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const activeSpecialSchedules: SpecialSchedule[] = getActiveSpecialSchedules();
 
-  const handleNav = (route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter") => {
+  const handleNav = (
+    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques"
+  ) => {
     if (onNavigate) {
       onNavigate(route);
     } else {
@@ -116,6 +120,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
                 <p className="text-[11px] text-slate-400 pl-5.5">
                   Sensibilisation, dépistage & conseils
+                </p>
+              </li>
+
+              <li className="pt-1">
+                <a
+                  href="#publications-scientifiques"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("publications-scientifiques");
+                  }}
+                  className="flex items-center gap-2 hover:text-white transition-colors group"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-teal-400 group-hover:scale-110 transition-transform" />
+                  <span className="font-semibold text-slate-200 hover:underline">
+                    Travaux & Publications Scientifiques
+                  </span>
+                </a>
+                <p className="text-[11px] text-slate-400 pl-5.5">
+                  Recherche du Dr MECHAL Youness
                 </p>
               </li>
 
@@ -242,7 +265,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Sensibilisation : H. pylori
             </a>
             <span>•</span>
-            <span>Direction Médicale : Dr MECHAL Youness</span>
+            <a
+              href="#publications-scientifiques"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNav("publications-scientifiques");
+              }}
+              className="hover:text-teal-300 text-emerald-400 font-medium transition-colors"
+            >
+              Publications Scientifiques
+            </a>
+            <span>•</span>
+            <span>Direction Médicale : Dr MECHAL Youness, Spécialiste en Biologie Médicale</span>
           </div>
         </div>
       </div>

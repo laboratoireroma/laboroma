@@ -5,11 +5,23 @@ import {
   getLabCurrentStatus,
   getActiveSpecialSchedules,
 } from "../data/labInfo";
-import { Phone, MessageSquare, MapPin, Briefcase, Handshake, Menu, X, HeartPulse } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Briefcase, Handshake, Menu, X, HeartPulse, BookOpen } from "lucide-react";
 
 interface TopNavProps {
-  currentRoute?: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter";
-  onNavigate?: (route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter") => void;
+  currentRoute?:
+    | "home"
+    | "recrutement"
+    | "partenariat"
+    | "sensibilisation-helicobacter"
+    | "publications-scientifiques";
+  onNavigate?: (
+    route:
+      | "home"
+      | "recrutement"
+      | "partenariat"
+      | "sensibilisation-helicobacter"
+      | "publications-scientifiques"
+  ) => void;
 }
 
 export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigate }) => {
@@ -51,6 +63,12 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
         onNavigate("sensibilisation-helicobacter");
       } else {
         window.location.hash = "#sensibilisation-helicobacter";
+      }
+    } else if (target === "publications-scientifiques" || target === "publications") {
+      if (onNavigate) {
+        onNavigate("publications-scientifiques");
+      } else {
+        window.location.hash = "#publications-scientifiques";
       }
     } else {
       // It's a section anchor like #services, #conventions
@@ -215,6 +233,20 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
             <Handshake className="w-3.5 h-3.5 text-teal-700" />
             <span>Partenariats</span>
           </a>
+
+          {/* New Page: Publications Scientifiques */}
+          <a
+            href="#publications-scientifiques"
+            onClick={(e) => handleLinkClick(e, "publications-scientifiques")}
+            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors whitespace-nowrap ${
+              currentRoute === "publications-scientifiques"
+                ? "bg-teal-50 text-teal-900 font-bold border border-teal-200/80"
+                : "hover:text-teal-800 hover:bg-slate-100/80 text-teal-900"
+            }`}
+          >
+            <BookOpen className="w-3.5 h-3.5 text-teal-700" />
+            <span>Recherche & Travaux</span>
+          </a>
         </nav>
 
         {/* Zone 3: Quick Action Group & Mobile Toggle */}
@@ -351,6 +383,22 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
               <div>
                 <p className="font-bold">Conventions & Partenariats</p>
                 <p className="text-[10px] opacity-80 font-normal">Entreprises, mutuelles et cliniques</p>
+              </div>
+            </a>
+
+            <a
+              href="#publications-scientifiques"
+              onClick={(e) => handleLinkClick(e, "publications-scientifiques")}
+              className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all ${
+                currentRoute === "publications-scientifiques"
+                  ? "bg-teal-800 text-white"
+                  : "bg-teal-50/70 hover:bg-teal-100 text-teal-900 border border-teal-200/60"
+              }`}
+            >
+              <BookOpen className="w-4 h-4 text-teal-700" />
+              <div>
+                <p className="font-bold">Travaux & Publications Scientifiques</p>
+                <p className="text-[10px] opacity-80 font-normal">Recherche du Dr MECHAL Youness</p>
               </div>
             </a>
           </div>
