@@ -423,6 +423,16 @@ export const PRACTICAL_TIPS = [
       "Un jeûne strict de 10 à 12 heures est indispensable pour le bilan lipidique (cholestérol, triglycérides) et la glycémie à jeun. Pour de nombreuses autres analyses (NFS, sérologies, b-HCG, etc.), le jeûne n'est pas nécessaire. L'eau reste autorisée.",
   },
   {
+    title: "Quels sont les moyens de paiement acceptés au laboratoire ?",
+    answer:
+      "Le laboratoire propose plusieurs modes de règlement pour votre confort : paiement en espèces (MAD), paiement par virements instantanés interbancaires sécurisés, et règlement par cartes bancaires (TPE). Les prises en charge et tiers payant mutuelles (CNSS, CNOPS, CMIM, Wafa Assurance, etc.) sont également assurés.",
+  },
+  {
+    title: "Le laboratoire est-il accessible aux personnes à mobilité réduite (PMR) et propose-t-il le prélèvement en voiture (Car-drive) ?",
+    answer:
+      "Oui. Le laboratoire est entièrement accessible en fauteuil roulant et de plain-pied. Pour les patients fragiles, convalescents, bébés ou personnes pressées, nous proposons la possibilité de prélèvement en mode Car-drive directement dans votre véhicule devant le laboratoire. Nous disposons également d'aiguilles et matériel spécial pour patients délicats à piquer et de toilettes séparées Hommes / Femmes.",
+  },
+  {
     title: "Quels documents apporter au laboratoire ?",
     answer:
       "Votre ordonnance médicale, votre pièce d'identité (CIN) et votre carte de mutuelle ou prise en charge d'assurance si applicable.",
@@ -582,5 +592,89 @@ export const LAB_CONVENTIONS: LabConvention[] = [
     logoUrl: logoFosHalieutis,
     description: "Convention préférentielle pour les adhérents et ayants droit de la Fondation FOS-Halieutis.",
     coverageTag: "Partenaire officiel",
+  },
+];
+
+export interface AccessibilityItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  badge: string;
+  iconType: "car" | "wheelchair" | "feather" | "restroom";
+}
+
+export const LAB_ACCESSIBILITIES: AccessibilityItem[] = [
+  {
+    id: "cardrive",
+    title: "Possibilité de prélèvement en mode Cardrive",
+    subtitle: "Prélèvement sans descendre de votre véhicule",
+    description:
+      "Réalisez votre prise de sang directement depuis votre voiture stationnée devant le laboratoire. Idéal pour les personnes à mobilité réduite, convalescents, bébés ou personnes pressées.",
+    badge: "Service Confort",
+    iconType: "car",
+  },
+  {
+    id: "wheelchair",
+    title: "Laboratoire accessible en fauteuil roulant",
+    subtitle: "Accès PMR de plain-pied garanti",
+    description:
+      "Locaux entièrement aménagés aux normes d'accessibilité pour les personnes en situation de handicap, fauteuils roulants et poussettes, avec accès fluide et portes larges.",
+    badge: "Accès PMR",
+    iconType: "wheelchair",
+  },
+  {
+    id: "delicate",
+    title: "Aiguilles et matériel spécial pour patients délicats à piquer",
+    subtitle: "Prélèvement doux et indolore",
+    description:
+      "Dispositifs pédiatriques de petit calibre, micro-ailettes et aiguilles ultra-fines pour les veines difficiles, enfants, personnes âgées ou patients appréhendant la piqûre.",
+    badge: "Prélèvement Doux",
+    iconType: "feather",
+  },
+  {
+    id: "toilets",
+    title: "Toilettes séparées Hommes / Femmes",
+    subtitle: "Hygiène irréprochable et intimité préservée",
+    description:
+      "Espaces sanitaires dédiés, séparés pour hommes et femmes, nettoyés et désinfectés en continu, équipés pour les recueils d'urines dans un confort optimal.",
+    badge: "Intimité & Hygiène",
+    iconType: "restroom",
+  },
+];
+
+export interface PaymentMethodItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  badge: string;
+  iconType: "cash" | "instant" | "card";
+}
+
+export const LAB_PAYMENT_METHODS: PaymentMethodItem[] = [
+  {
+    id: "cash",
+    title: "Paiement espèce",
+    subtitle: "Monnaie marocaine (MAD)",
+    description: "Règlement en liquide accepté à notre guichet d'accueil avec remise immédiate d'un reçu détaillé et conforme.",
+    badge: "Espèces (MAD)",
+    iconType: "cash",
+  },
+  {
+    id: "instant",
+    title: "Paiement par virements instantanés",
+    subtitle: "Virement interbancaire immédiat",
+    description: "Paiement instantané direct depuis votre application bancaire mobile en toute sécurité et sans attente.",
+    badge: "Virement Instantané",
+    iconType: "instant",
+  },
+  {
+    id: "card",
+    title: "Paiement par cartes bancaires",
+    subtitle: "Terminal TPE sécurisé",
+    description: "Cartes bancaires marocaines (réseau CMI) et cartes bancaires internationales (Visa, Mastercard) avec ou sans contact.",
+    badge: "Cartes Bancaires (TPE)",
+    iconType: "card",
   },
 ];

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import {
   LAB_CONTACT,
   LAB_SCHEDULE,
+  LAB_ACCESSIBILITIES,
+  LAB_PAYMENT_METHODS,
   getLabCurrentStatus,
   getActiveSpecialSchedules,
   getWhatsAppLink,
@@ -16,7 +18,43 @@ import {
   ExternalLink,
   CheckCircle2,
   Calendar,
+  Car,
+  Accessibility,
+  Feather,
+  DoorClosed,
+  Banknote,
+  Zap,
+  CreditCard,
+  ShieldCheck,
 } from "lucide-react";
+
+const getAccessibilityIcon = (type: string) => {
+  switch (type) {
+    case "car":
+      return <Car className="w-5 h-5 text-teal-700" />;
+    case "wheelchair":
+      return <Accessibility className="w-5 h-5 text-teal-700" />;
+    case "feather":
+      return <Feather className="w-5 h-5 text-teal-700" />;
+    case "restroom":
+      return <DoorClosed className="w-5 h-5 text-teal-700" />;
+    default:
+      return <CheckCircle2 className="w-5 h-5 text-teal-700" />;
+  }
+};
+
+const getPaymentIcon = (type: string) => {
+  switch (type) {
+    case "cash":
+      return <Banknote className="w-5 h-5 text-emerald-600" />;
+    case "instant":
+      return <Zap className="w-5 h-5 text-amber-500" />;
+    case "card":
+      return <CreditCard className="w-5 h-5 text-blue-600" />;
+    default:
+      return <CreditCard className="w-5 h-5 text-teal-700" />;
+  }
+};
 
 export const PracticalInfoSection: React.FC = () => {
   const [labStatus, setLabStatus] = useState(getLabCurrentStatus());
@@ -258,6 +296,134 @@ export const PracticalInfoSection: React.FC = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* --- SECTION ACCESSIBILITÉS DISPONIBLES --- */}
+        <div id="accessibilites" className="pt-10 mt-6 border-t border-slate-200/80">
+          <div className="max-w-2xl mb-6">
+            <span className="text-xs font-bold tracking-wider uppercase text-teal-800 block mb-1">
+              Confort & Prise en Charge
+            </span>
+            <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+              Accessibilités disponibles
+            </h3>
+            <p className="text-slate-600 text-xs sm:text-sm mt-1">
+              Des aménagements conçus pour garantir un accueil digne, fluide, rassurant et accessible à tous les patients.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {LAB_ACCESSIBILITIES.map((item) => (
+              <div
+                key={item.id}
+                className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-teal-300 hover:bg-teal-50/20 transition-all flex flex-col justify-between shadow-2xs group"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200/80 flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
+                      {getAccessibilityIcon(item.iconType)}
+                    </div>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-100/80 text-teal-900 border border-teal-200">
+                      {item.badge}
+                    </span>
+                  </div>
+
+                  <h4 className="text-sm font-bold text-slate-900 leading-snug mb-1">
+                    {item.title}
+                  </h4>
+                  <p className="text-[11px] font-semibold text-teal-800 mb-2">
+                    {item.subtitle}
+                  </p>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+
+                {item.id === "cardrive" && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60">
+                    <a
+                      href={getWhatsAppLink("Bonjour Laboratoire Roma, je souhaite bénéficier d'un prélèvement en mode Cardrive devant le laboratoire :")}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
+                    >
+                      <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                      <span>Prévenir avant d'arriver</span>
+                    </a>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* --- SECTION MOYENS DE PAIEMENT DISPONIBLES --- */}
+        <div id="moyens-de-paiement" className="mt-10 pt-8 border-t border-slate-200/80">
+          <div className="max-w-2xl mb-6">
+            <span className="text-xs font-bold tracking-wider uppercase text-teal-800 block mb-1">
+              Règlement & Facturation
+            </span>
+            <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
+              Moyens de paiement disponibles
+            </h3>
+            <p className="text-slate-600 text-xs sm:text-sm mt-1">
+              Réglez vos analyses médicales en toute flexibilité selon le mode de paiement de votre choix.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            {LAB_PAYMENT_METHODS.map((method) => (
+              <div
+                key={method.id}
+                className="p-5 rounded-2xl bg-white border border-slate-200/80 hover:border-slate-300 transition-all flex flex-col justify-between shadow-xs"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center shadow-xs">
+                      {getPaymentIcon(method.iconType)}
+                    </div>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-800 border border-slate-200">
+                      {method.badge}
+                    </span>
+                  </div>
+
+                  <h4 className="text-sm sm:text-base font-bold text-slate-900 mb-0.5">
+                    {method.title}
+                  </h4>
+                  <p className="text-[11px] font-semibold text-teal-800 mb-2">
+                    {method.subtitle}
+                  </p>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {method.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Rappel Tiers Payant & Conventions */}
+          <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-teal-50 to-slate-50 border border-teal-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="w-9 h-9 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-teal-800 shrink-0 mt-0.5">
+                <ShieldCheck className="w-5 h-5 text-teal-800" />
+              </div>
+              <div>
+                <h5 className="text-xs sm:text-sm font-bold text-slate-900">
+                  Prise en charge directe & Tiers payant mutuelles
+                </h5>
+                <p className="text-xs text-slate-600 mt-0.5">
+                  Conventionné CNSS (AMO), CNOPS, CMIM, Wafa Assurance et FOS-Halieutis. Remplissage immédiat des feuilles de soins pour toutes assurances complémentaires privées.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="#conventions"
+              className="shrink-0 px-4 py-2 rounded-xl bg-white border border-teal-200 hover:border-teal-300 text-teal-900 text-xs font-bold transition-colors shadow-2xs whitespace-nowrap"
+            >
+              Voir les mutuelles conventionnées
+            </a>
           </div>
         </div>
       </div>

@@ -46,6 +46,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Conventions mutuelles acceptées · Tiers payant</span>
             </div>
+
+            <div className="pt-1 flex flex-wrap gap-1.5 text-[10px] text-slate-300">
+              <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700 text-slate-300">♿ Fauteuil roulant (PMR)</span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700 text-slate-300">🚗 Mode Cardrive</span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700 text-slate-300">💳 Cartes bancaires</span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700 text-slate-300">⚡ Virement instantané</span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700 text-slate-300">💵 Espèces</span>
+            </div>
           </div>
 
           {/* Espace Professionnel & Partenaires (NEW) */}
