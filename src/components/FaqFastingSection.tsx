@@ -1,6 +1,6 @@
 import React from "react";
 import { PRACTICAL_TIPS, getWhatsAppLink } from "../data/labInfo";
-import { HelpCircle, MessageSquare, AlertTriangle, CheckCircle, Info } from "lucide-react";
+import { HelpCircle, MessageSquare, AlertTriangle, CheckCircle, Info, ShieldCheck } from "lucide-react";
 
 export const FaqFastingSection: React.FC = () => {
   return (
@@ -11,12 +11,40 @@ export const FaqFastingSection: React.FC = () => {
             Guide Patient & Préparation
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-            Conseils pratiques & Jeûne
+            Conseils pratiques, Jeûne & Sécurité
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Bien préparer votre prise de sang garantit des résultats fiables et précis. Voici les
-            réponses aux questions les plus fréquentes.
+            Bien préparer votre prise de sang garantit des résultats fiables et précis. Retrouvez ici les
+            exigences médicales, les conditions de jeûne et les règles de sécurité transfusionnelle.
           </p>
+        </div>
+
+        {/* Encadré Réglementaire & Sécurité : Délivrance de la carte de groupe sanguin */}
+        <div className="mb-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-rose-50/90 via-white to-slate-50 border border-rose-200/90 shadow-xs">
+          <div className="flex items-start gap-3.5 sm:gap-4">
+            <div className="w-11 h-11 rounded-xl bg-rose-100 border border-rose-200 flex items-center justify-center text-rose-700 shrink-0">
+              <ShieldCheck className="w-6 h-6 text-rose-700" />
+            </div>
+            <div className="space-y-2 flex-1">
+              <div className="flex flex-wrap items-center gap-2">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                  Délivrance de la carte de groupe sanguin
+                </h3>
+                <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200">
+                  Exigence Réglementaire & Médicale
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                Conformément aux exigences réglementaires et médicales en vigueur concernant la sécurité transfusionnelle, l'établissement d'une carte de groupe sanguin définitive nécessite deux déterminations indépendantes réalisées par le laboratoire.
+              </p>
+              <div className="p-3 rounded-xl bg-white/90 border border-rose-200/80 text-xs sm:text-sm text-rose-950 flex items-start gap-2 shadow-xs">
+                <Info className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+                <span>
+                  <strong>Précision importante :</strong> Si vous ne disposez que d'une seule détermination à ce jour, une seconde réalisation sera nécessaire pour la délivrance de votre document final.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* 2 Fasting Highlight Boxes */}

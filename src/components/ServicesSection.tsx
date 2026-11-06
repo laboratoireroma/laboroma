@@ -133,8 +133,37 @@ export const ServicesSection: React.FC = () => {
           })}
         </div>
 
+        {/* Encadré d'information : Carte de Groupe Sanguin & Sécurité Transfusionnelle */}
+        <div className="mt-8 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <div className="w-9 h-9 rounded-xl bg-red-100 border border-red-200 flex items-center justify-center text-red-700 shrink-0 mt-0.5">
+              <Droplet className="w-4 h-4 text-red-600" />
+            </div>
+            <div>
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 flex flex-wrap items-center gap-2">
+                <span>Délivrance de la carte de groupe sanguin</span>
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-red-100 text-red-800">
+                  Sécurité Transfusionnelle
+                </span>
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                Conformément aux exigences réglementaires et médicales en vigueur concernant la sécurité transfusionnelle, l'établissement d'une carte de groupe sanguin définitive nécessite deux déterminations indépendantes réalisées par le laboratoire. Si vous ne disposez que d'une seule détermination à ce jour, une seconde réalisation sera nécessaire pour la délivrance de votre document final.
+              </p>
+            </div>
+          </div>
+          <a
+            href={getWhatsAppLink("Bonjour Laboratoire Roma, je souhaite faire établir ma carte de groupe sanguin définitive :")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-slate-300 hover:border-slate-400 text-slate-800 text-xs font-semibold hover:bg-slate-100 transition-colors shadow-2xs whitespace-nowrap self-start md:self-auto"
+          >
+            <MessageSquare className="w-3.5 h-3.5 text-teal-700" />
+            <span>Renseignements groupe sanguin</span>
+          </a>
+        </div>
+
         {/* Quick Prescription Send Box */}
-        <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-teal-900 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-teal-900 to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="space-y-1 text-center sm:text-left">
             <h4 className="text-base sm:text-lg font-bold">
               Vous avez une ordonnance d'analyses médicales ?

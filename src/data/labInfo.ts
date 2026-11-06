@@ -328,11 +328,13 @@ export interface ServiceItem {
 export const LAB_SERVICES: ServiceItem[] = [
   {
     id: "hematologie",
-    name: "Hématologie",
-    description: "Étude et analyse complète des cellules sanguines et de la coagulation.",
+    name: "Hématologie & Immuno-hématologie",
+    description: "Étude complète des cellules sanguines, de la coagulation et sécurité transfusionnelle.",
     details: [
       "Numération Formule Sanguine (NFS / Hémogramme)",
+      "Groupe sanguin ABO-Rhésus & Phénotypage érythrocytaire (Carte de groupe sécurisée)",
       "Bilan d'hémostase & coagulation (TP, INR, TCA, Fibrinogène)",
+      "Recherche d'Agglutinines Irrégulières (RAI)",
       "Vitesse de sédimentation (VS) & Réticulocytes",
       "Électrophorèse de l'hémoglobine",
     ],
@@ -410,6 +412,11 @@ export const LAB_SERVICES: ServiceItem[] = [
 ];
 
 export const PRACTICAL_TIPS = [
+  {
+    title: "Délivrance de la carte de groupe sanguin : quelles sont les conditions ?",
+    answer:
+      "Conformément aux exigences réglementaires et médicales en vigueur concernant la sécurité transfusionnelle, l'établissement d'une carte de groupe sanguin définitive nécessite deux déterminations indépendantes réalisées par le laboratoire. Si vous ne disposez que d'une seule détermination à ce jour, une seconde réalisation sera nécessaire pour la délivrance de votre document final.",
+  },
   {
     title: "Le jeûne est-il obligatoire ?",
     answer:
