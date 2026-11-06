@@ -166,6 +166,10 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
                   Article de référence · ~92 citations internationales
                 </span>
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                  <span>Article indexé PubMed Central · examiné par les pairs</span>
+                </span>
                 <time dateTime="2019-12-05" className="text-xs font-mono font-medium text-slate-500">
                   5 Décembre 2019
                 </time>
@@ -178,32 +182,71 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 Évaluation des performances du système GeneXpert MTB/RIF dans le diagnostic de la tuberculose extrapulmonaire
               </p>
 
-              <div className="text-xs text-slate-500 font-mono">
-                Revue : <strong className="text-slate-800 font-sans">BMC Infectious Diseases</strong> (Springer Nature) · 2019; 19:1069 · DOI: 10.1186/s12879-019-4683-9
+              <div className="text-xs text-slate-600 space-y-1">
+                <div>
+                  Revue : <strong className="text-slate-900 font-semibold">BMC Infectious Diseases</strong> (Springer Nature) · 2019;19(1):1069
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 font-mono text-[11px]">
+                  <a
+                    href="https://doi.org/10.1186/s12879-019-4687-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    DOI : 10.1186/s12879-019-4687-7
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/31856754/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMID : 31856754
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6924089/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMCID : PMC6924089
+                  </a>
+                </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Résumé vulgarisé :</strong> La tuberculose extrapulmonaire (ganglionnaire, pleurale, méningée) représente un défi diagnostique majeur en raison de sa faible charge bactérienne. Cette étude prospective de grande envergure menée au CHU Ibn Sina de Rabat a évalué la PCR en temps réel automatisée GeneXpert MTB/RIF sur divers prélèvements de tissus et liquides biologiques. Les résultats ont démontré une excellente spécificité (jusqu'à 98 %) et une rapidité décisive (résultats en 2 heures avec détection simultanée de la résistance à la rifampicine), permettant d'instaurer précocement le traitement antituberculeux adapté.
+                <strong>Résumé vulgarisé :</strong> La tuberculose extrapulmonaire (ganglionnaire, pleurale, méningée) représente un défi diagnostique majeur en raison de sa faible charge bactérienne. Cette étude prospective de grande envergure menée au CHU Ibn Sina de Rabat a évalué la PCR en temps réel automatisée GeneXpert MTB/RIF sur divers prélèvements de tissus et liquides biologiques face aux méthodes conventionnelles. Les résultats ont démontré une sensibilité élevée et une spécificité excellente (jusqu'à 98 %), avec une rapidité décisive (résultats en 2 heures et détection simultanée de la résistance à la rifampicine), permettant d'instaurer précocement le traitement antituberculeux adapté.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
                 <a
-                  href="https://doi.org/10.1186/s12879-019-4683-9"
+                  href="https://doi.org/10.1186/s12879-019-4687-7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
                 >
-                  <span>Consulter l'article original (DOI)</span>
+                  <span>Consulter l'article original (Springer Nature)</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
                 <span className="text-slate-300">•</span>
                 <a
-                  href="https://pubmed.ncbi.nlm.nih.gov/31805900/"
+                  href="https://pubmed.ncbi.nlm.nih.gov/31856754/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
                 >
-                  <span>Voir sur PubMed (PMID: 31805900)</span>
+                  <span>Notice PubMed (PMID: 31856754)</span>
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6924089/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Texte intégral PMC6924089</span>
                 </a>
               </div>
             </article>
@@ -214,8 +257,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200">
                   Infectiologie & Épidémiologie Clinique
                 </span>
-                <time dateTime="2021" className="text-xs font-mono font-medium text-slate-500">
-                  2021
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                  <span>Article indexé PubMed Central · examiné par les pairs</span>
+                </span>
+                <time dateTime="2021-06-02" className="text-xs font-mono font-medium text-slate-500">
+                  2 Juin 2021
                 </time>
               </div>
 
@@ -226,23 +273,71 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 Infections urinaires communautaires à bactéries multirésistantes dans le nord du Maroc : épidémiologie et facteurs de risque
               </p>
 
-              <div className="text-xs text-slate-500 font-mono">
-                Revue : <strong className="text-slate-800 font-sans">GERMS</strong> (Infectious Diseases Journal) · 2021 · Indexé PubMed Central
+              <div className="text-xs text-slate-600 space-y-1">
+                <div>
+                  Revue : <strong className="text-slate-900 font-semibold">GERMS</strong> (revue officielle de l'European Academy of HIV/AIDS and Infectious Diseases) · 2021;11(2):160-169
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 font-mono text-[11px]">
+                  <a
+                    href="https://doi.org/10.18683/germs.2021.1253"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    DOI : 10.18683/germs.2021.1253
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/34422688/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMID : 34422688
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373406/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMCID : PMC8373406
+                  </a>
+                </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Résumé vulgarisé :</strong> Face à la dissémination croissante des entérobactéries productrices de bêta-lactamases à spectre élargi (BLSE) en ambulatoire, cette étude a caractérisé le profil de résistance bactérienne et les facteurs de risque chez des patients non hospitalisés consultant pour une infection urinaire. Ces données fournissent des repères précieux pour guider l'antibiothérapie probabiliste rationnelle et éviter l'échec thérapeutique en médecine de ville.
+                <strong>Résumé vulgarisé :</strong> Face à la dissémination croissante des entérobactéries productrices de bêta-lactamases à spectre élargi (BLSE) en ville, cette étude a caractérisé le profil de résistance bactérienne et les facteurs de risque chez des patients non hospitalisés consultant pour une infection urinaire dans le nord du Maroc. Ces données fournissent des repères précieux pour guider l'antibiothérapie probabiliste rationnelle et éviter l'échec thérapeutique au niveau ambulatoire.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
                 <a
-                  href="https://scholar.google.com/scholar?q=Multidrug-resistant+community-acquired+urinary+tract+infections+in+a+northern+region+of+Morocco+Mechal"
+                  href="https://doi.org/10.18683/germs.2021.1253"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
                 >
-                  <span>Consulter sur Google Scholar</span>
+                  <span>Accéder à l'article complet (DOI GERMS)</span>
                   <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/34422688/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Notice PubMed (PMID: 34422688)</span>
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373406/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Texte intégral PMC8373406</span>
                 </a>
               </div>
             </article>
@@ -253,8 +348,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800 border border-slate-200">
                   Surveillance de l'Antibiorésistance sur 7 Ans
                 </span>
-                <time dateTime="2021" className="text-xs font-mono font-medium text-slate-500">
-                  2021
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                  <span>Article indexé PubMed Central · examiné par les pairs</span>
+                </span>
+                <time dateTime="2021-06-02" className="text-xs font-mono font-medium text-slate-500">
+                  2 Juin 2021
                 </time>
               </div>
 
@@ -265,23 +364,81 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 Actualisation de la résistance d'Escherichia coli isolé d'échantillons urinaires dans un hôpital marocain : rétrospective sur 7 ans
               </p>
 
-              <div className="text-xs text-slate-500 font-mono">
-                Revue : <strong className="text-slate-800 font-sans">Littérature Biomédicale Internationale</strong> · 2021
+              <div className="text-xs text-slate-600 space-y-1">
+                <div>
+                  Revue : <strong className="text-slate-900 font-semibold">GERMS</strong> (revue officielle de l'European Academy of HIV/AIDS and Infectious Diseases) · 2021;11(2):189-198
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 font-mono text-[11px]">
+                  <a
+                    href="https://doi.org/10.18683/germs.2021.1256"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    DOI : 10.18683/germs.2021.1256
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/34422691/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMID : 34422691
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373403/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMCID : PMC8373403
+                  </a>
+                </div>
               </div>
 
-              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Résumé vulgarisé :</strong> Analyse longitudinale approfondie de l'évolution des antibiogrammes sur une période de 7 ans en milieu hospitalier. Ce travail met en lumière les tendances de résistance aux fluoroquinolones et céphalosporines de troisième génération, tout en identifiant les molécules préservant une sensibilité optimale pour les infections urinaires sévères.
-              </p>
+              <div className="text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2">
+                <p>
+                  <strong>Résumé vulgarisé :</strong> Étude rétrospective sur 7 ans (2012–2018) menée au Département de Bactériologie de l'Hôpital Militaire d'Instruction Mohammed V de Rabat, analysant la sensibilité aux antibiotiques des souches d'<em>Escherichia coli</em> isolées d'infections urinaires.
+                </p>
+                <ul className="list-disc list-inside space-y-1 pl-1 text-slate-600">
+                  <li><strong>Taux de résistance :</strong> 12 % aux céphalosporines de 3ᵉ génération (C3G), 1 % à l'imipénème, 34 % aux fluoroquinolones.</li>
+                  <li><strong>Phénotype BLSE :</strong> 6,73 % en moyenne globale (en nette progression de 3 % en 2012 à 11,16 % en 2018) ; phénotype carbapénémase : 1,25 %.</li>
+                  <li><strong>Profil épidémiologique :</strong> Différence statistiquement significative observée entre patients hospitalisés et patients ambulatoires (p &lt; 0,05) pour la majorité des molécules antibiotiques testées.</li>
+                </ul>
+                <p className="font-medium text-slate-800">
+                  <strong>Conclusion clinique :</strong> Nécessité impérative de réviser la stratégie d'antibiothérapie probabiliste des infections urinaires et de s'appuyer systématiquement sur l'antibiogramme délivré par le laboratoire.
+                </p>
+              </div>
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
                 <a
-                  href="https://scholar.google.com/scholar?q=Update+on+the+resistance+of+Escherichia+coli+isolated+from+urine+specimens+Morocco+Mechal"
+                  href="https://doi.org/10.18683/germs.2021.1256"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
                 >
-                  <span>Rechercher les citations sur Google Scholar</span>
+                  <span>Accéder à l'article complet (DOI GERMS)</span>
                   <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/34422691/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Consulter la notice PubMed (PMID: 34422691)</span>
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373403/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Texte intégral PubMed Central (PMC8373403)</span>
                 </a>
               </div>
             </article>
@@ -292,8 +449,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200">
                   Hématologie & Hémoglobinopathies
                 </span>
-                <time dateTime="2018" className="text-xs font-mono font-medium text-slate-500">
-                  2018
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                  <span>Article indexé PubMed Central · examiné par les pairs</span>
+                </span>
+                <time dateTime="2018-07" className="text-xs font-mono font-medium text-slate-500">
+                  Juillet 2018
                 </time>
               </div>
 
@@ -304,8 +465,38 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 Découverte inattendue d'une hémoglobinopathie composite C / β° thalassémie
               </p>
 
-              <div className="text-xs text-slate-500 font-mono">
-                Revue : <strong className="text-slate-800 font-sans">Clinical Case Reports</strong> (Wiley) · 2018 · DOI: 10.1002/ccr3.1818
+              <div className="text-xs text-slate-600 space-y-1">
+                <div>
+                  Revue : <strong className="text-slate-900 font-semibold">Clinical Case Reports</strong> (Wiley) · 2018;6(7):1300-1304
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 font-mono text-[11px]">
+                  <a
+                    href="https://doi.org/10.1002/ccr3.1594"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    DOI : 10.1002/ccr3.1594
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/30013778/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMID : 30013778
+                  </a>
+                  <span>·</span>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6040854/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMCID : PMC6040854
+                  </a>
+                </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -314,13 +505,31 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
                 <a
-                  href="https://doi.org/10.1002/ccr3.1818"
+                  href="https://doi.org/10.1002/ccr3.1594"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
                 >
                   <span>Consulter le cas clinique (Wiley DOI)</span>
                   <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://pubmed.ncbi.nlm.nih.gov/30013778/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Notice PubMed (PMID: 30013778)</span>
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://scholar.google.com/scholar?q=Unexpected+discovery+of+hemoglobinopathy+C+thalassemia+Mechal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Lien Google Scholar</span>
                 </a>
               </div>
             </article>
@@ -330,6 +539,9 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 border border-purple-200">
                   Virologie Médicale & Covid-19
+                </span>
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-800 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full">
+                  <span>Prépublication scientifique (Preprint)</span>
                 </span>
                 <time dateTime="2024" className="text-xs font-mono font-medium text-slate-500">
                   2024
@@ -343,8 +555,22 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 L'isolement du SARS-CoV-2 en culture cellulaire a contribué à une meilleure prise en charge des patients Covid-19 hospitalisés
               </p>
 
-              <div className="text-xs text-slate-500 font-mono">
-                Revue : <strong className="text-slate-800 font-sans">Prépublication SSRN / Elsevier</strong> · 2024
+              <div className="text-xs text-slate-600 space-y-1">
+                <div>
+                  Revue : <strong className="text-slate-900 font-semibold">Prépublication SSRN / Elsevier</strong> · 2024
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 font-mono text-[11px]">
+                  <span>SSRN Electronic Journal</span>
+                  <span>·</span>
+                  <a
+                    href="https://scholar.google.com/scholar?q=Isolation+of+Sars-Cov-2+in+Cell+Cultures+Has+Helped+in+Better+Management+of+Covid-19+Patients+During+Hospitalization"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    Lien Google Scholar
+                  </a>
+                </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -353,12 +579,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
                 <a
-                  href="https://papers.ssrn.com/"
+                  href="https://scholar.google.com/scholar?q=Isolation+of+Sars-Cov-2+in+Cell+Cultures+Has+Helped+in+Better+Management+of+Covid-19+Patients+During+Hospitalization"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-bold text-teal-800 hover:text-teal-950 transition-colors"
                 >
-                  <span>Consulter sur la plateforme SSRN</span>
+                  <span>Lien Google Scholar & Citations</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

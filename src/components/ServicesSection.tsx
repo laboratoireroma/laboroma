@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   MessageSquare,
   ArrowRight,
+  Microscope,
 } from "lucide-react";
 
 const getServiceIcon = (id: string) => {
@@ -182,6 +183,42 @@ export const ServicesSection: React.FC = () => {
           >
             <MessageSquare className="w-4 h-4" />
             <span>Envoyer mon ordonnance</span>
+          </a>
+        </div>
+
+        {/* Authority Banner: Travaux & Publications Scientifiques du Dr MECHAL */}
+        <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-teal-50/70 border border-teal-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="flex items-start gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-teal-800 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <Microscope className="w-5 h-5 text-teal-100" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-bold uppercase tracking-wider text-teal-900">
+                  Recherche & Biologie Médicale
+                </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-200/70 text-teal-900 font-mono">
+                  Dr MECHAL Youness
+                </span>
+              </div>
+              <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                Travaux & Publications Scientifiques du Dr MECHAL Youness, Spécialiste en Biologie Médicale
+              </h4>
+              <p className="text-xs text-slate-600 mt-1 max-w-2xl leading-relaxed">
+                Publications internationales de référence : GeneXpert MTB/RIF (BMC Infectious Diseases), antibiorésistance hospitalière et communautaire (GERMS 2021) et hématologie clinique.
+              </p>
+            </div>
+          </div>
+          <a
+            href="./publications-scientifiques/"
+            onClick={(e) => {
+              if (window.location.hash || window.location.pathname.endsWith("/")) {
+                window.location.hash = "#publications-scientifiques";
+              }
+            }}
+            className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-teal-800 hover:bg-teal-900 text-white text-xs font-bold transition-all shadow-xs hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <span>Voir toutes les publications scientifiques →</span>
           </a>
         </div>
       </div>

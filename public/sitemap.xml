@@ -13,9 +13,15 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://laboratoireroma.github.io/laboroma/publications-dr-mechal-youness.html</loc>
+    <loc>https://laboratoireroma.github.io/laboroma/publications-scientifiques/</loc>
     <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://laboratoireroma.github.io/laboroma/publications-dr-mechal-youness.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
