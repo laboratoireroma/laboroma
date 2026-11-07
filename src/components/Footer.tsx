@@ -4,7 +4,7 @@ import { Phone, MessageSquare, MapPin, Navigation, ShieldCheck, Mail, Briefcase,
 
 interface FooterProps {
   onNavigate?: (
-    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques"
+    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques" | "education-sante"
   ) => void;
 }
 
@@ -12,7 +12,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const activeSpecialSchedules: SpecialSchedule[] = getActiveSpecialSchedules();
 
   const handleNav = (
-    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques"
+    route: "home" | "recrutement" | "partenariat" | "sensibilisation-helicobacter" | "publications-scientifiques" | "education-sante"
   ) => {
     if (onNavigate) {
       onNavigate(route);
@@ -101,6 +101,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 </a>
                 <p className="text-[11px] text-slate-400 pl-5.5">
                   Entreprises, mutuelles & cliniques
+                </p>
+              </li>
+
+              <li className="pt-1">
+                <a
+                  href="#education-sante"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNav("education-sante");
+                  }}
+                  className="flex items-center gap-2 hover:text-white transition-colors group"
+                >
+                  <HeartPulse className="w-3.5 h-3.5 text-teal-400 group-hover:scale-110 transition-transform" />
+                  <span className="font-semibold text-slate-200 hover:underline">
+                    Éducation & Prévention Santé
+                  </span>
+                </a>
+                <p className="text-[11px] text-slate-400 pl-5.5">
+                  Test IGRA, HOMA-IR & Test respiratoire
                 </p>
               </li>
 

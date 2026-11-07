@@ -5,7 +5,7 @@ import {
   ShieldCheck,
   Microscope,
   GraduationCap,
-  Sparkles,
+  Award,
 } from "lucide-react";
 import { LAB_CONTACT, getWhatsAppLink } from "../data/labInfo";
 
@@ -50,55 +50,105 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight text-balance">
-            Travaux et Publications Scientifiques du <span className="text-teal-800">Dr MECHAL Youness</span>, biologiste médical
+            Travaux et Publications Scientifiques du <span className="text-teal-800">Dr MECHAL Youness</span>, Pharmacien biologiste
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Directeur du <strong>Laboratoire d'Analyses Médicales Roma</strong> à Casablanca, le <strong>Dr MECHAL Youness, biologiste médical</strong>, met au service de la pratique quotidienne son expérience hospitalière en microbiologie clinique, en diagnostic des maladies infectieuses et en biochimie médicale, issue de son cursus à l'Hôpital Militaire d'Instruction Mohammed V de Rabat et au CHU Ibn Sina de Rabat.
+            Directeur du <strong>Laboratoire d'Analyses Médicales Roma</strong> à Casablanca, le <strong>Dr MECHAL Youness, Pharmacien biologiste (Ancien Interne au CHU Ibn Sina de Rabat)</strong>, met au service de la pratique quotidienne une solide expérience hospitalière en microbiologie clinique, en diagnostic des maladies infectieuses, en hématologie et en biochimie médicale, issue de son cursus à l'Hôpital Militaire d'Instruction Mohammed V de Rabat et au CHU Ibn Sina de Rabat.
           </p>
-          {/* [TITRE EXACT DU DIPLÔME À FOURNIR : Doctorat en Pharmacie / DES / Analyses de Biologie Médicale, Faculté de Médecine et de Pharmacie de Rabat – Université Mohammed V de Rabat, 2014] */}
         </section>
 
         {/* Section Profil Scientifique & Affiliations */}
         <section className="mb-10 p-6 rounded-2xl bg-white border border-slate-200/80 shadow-xs">
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
             <GraduationCap className="w-5 h-5 text-teal-700" />
-            <span>Profil & Cursus Hospitalo-Universitaire</span>
+            <span>Profil, Cursus Hospitalo-Universitaire & Distinctions</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm">
-            <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+            <div className="space-y-4">
               <div>
                 <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block">
                   Direction du Laboratoire
                 </span>
-                <p className="font-bold text-slate-900">Dr MECHAL Youness</p>
-                <p className="text-teal-800 font-semibold text-xs sm:text-sm">
-                  Biologiste Médical
+                <p className="font-bold text-slate-900 text-base">Dr MECHAL Youness</p>
+                <p className="text-teal-800 font-bold text-xs sm:text-sm">
+                  Pharmacien biologiste · Spécialiste en Biologie Médicale
                 </p>
-                {/* [TITRE EXACT DU DIPLÔME À FOURNIR : Doctorat en Pharmacie / DES / Analyses de Biologie Médicale, Faculté de Médecine et de Pharmacie de Rabat – Université Mohammed V de Rabat, 2014] */}
                 <p className="text-slate-500 text-xs">
                   Directeur du Laboratoire d'Analyses Médicales Roma (Casablanca 2 Mars)
                 </p>
               </div>
 
               <div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block">
-                  Formation Hospitalo-Universitaire
+                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">
+                  Titres & Diplômes Universitaires
                 </span>
-                <p className="text-slate-700 text-xs sm:text-sm leading-snug">
-                  Cursus d’Internat et de Résidanat en Biologie Médicale à l’<strong>Hôpital Militaire d’Instruction Mohammed V de Rabat</strong> et au <strong>CHU Ibn Sina de Rabat</strong> · Faculté de Médecine et de Pharmacie de Rabat.
+                <ul className="text-xs sm:text-sm text-slate-700 space-y-2">
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span>
+                      <strong>Doctorat en Pharmacie</strong>, Faculté de Médecine et de Pharmacie de Rabat – Université Mohammed V (thèse soutenue en 2014 : <em>« Détection du protozoaire Entamoeba gingivalis au niveau des poches parodontales »</em>). <strong>Ancien Interne au CHU Ibn Sina de Rabat</strong> pendant ce cursus.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span>
+                      <strong>DSM en Biologie Médicale</strong> (Diplôme de Spécialité Médicale), Université Mohammed V de Rabat, 2015-2019.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span>
+                      <strong>Diplôme Universitaire en Management de la Qualité (MQPAS)</strong>, Université de Bordeaux, 2018.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">
+                  Affiliations & Sociétés Savantes
+                </span>
+                <ul className="text-xs sm:text-sm text-slate-700 space-y-1">
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span><strong>Ancien Interne au CHU Ibn Sina de Rabat</strong>.</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span><strong>Hôpital Militaire d’Instruction Mohammed V de Rabat</strong> (département de bactériologie).</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span><strong>Faculté de Médecine et de Pharmacie de Rabat</strong> – Université Mohammed V.</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span>Membre de la <strong>Société Marocaine de Microbiologie Médicale (SMAMM)</strong>.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">
+                  Distinctions Scientifiques
+                </span>
+                <p className="text-xs sm:text-sm text-slate-700 flex items-start gap-1.5">
+                  <Award className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span>
+                    <strong>Prix du meilleur poster scientifique (2016)</strong> – Moroccan Society of Clinical Chemistry (Société Marocaine de Chimie Clinique).
+                  </span>
                 </p>
-                {/* [À CONFIRMER] Cursus d'approfondissement Université de Bordeaux */}
               </div>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block">
-                  Domaines de Travaux & Publications
+                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">
+                  Domaines de Travaux & Recherche
                 </span>
-                <ul className="text-xs sm:text-sm text-slate-700 space-y-1 mt-1">
+                <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5">
                   <li className="flex items-start gap-1.5">
                     <span className="text-teal-700 font-bold">•</span>
                     <span>Diagnostic moléculaire de la tuberculose extrapulmonaire (système GeneXpert MTB/RIF).</span>
@@ -114,6 +164,10 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                   <li className="flex items-start gap-1.5">
                     <span className="text-teal-700 font-bold">•</span>
                     <span>Découverte fortuite d'hémoglobinopathie composite C / β° thalassémie lors du dosage de l'HbA1c.</span>
+                  </li>
+                  <li className="flex items-start gap-1.5">
+                    <span className="text-teal-700 font-bold">•</span>
+                    <span>Microbiologie clinique, infectiologie moléculaire, hématologie, biochimie et management de la qualité en santé.</span>
                   </li>
                 </ul>
               </div>
@@ -213,9 +267,11 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 </div>
               </div>
 
-              {/* [À CONFIRMER] Lieu de l'étude (ne plus mentionner CHU Ibn Sina sans confirmation) */}
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <strong>Résumé :</strong> Étude rétrospective de 21 mois portant sur 714 prélèvements (285 pulmonaires, 429 extrapulmonaires) ; sensibilité d'environ 78-79 % et spécificité d'environ 90 % du GeneXpert MTB/RIF par rapport à la culture ; taux de résistance à la rifampicine de 0,84 %, concordance de 100 % avec GenoType MTBDRplus.
+              </p>
+              <p className="text-xs text-slate-500">
+                <strong>Lieu de l'étude :</strong> Hôpital militaire d’instruction Mohammed V, Rabat ; CHU Ibn Sina, Rabat.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
@@ -255,6 +311,10 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800 border border-slate-200">
                   4e auteur
                 </span>
+                <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <ShieldCheck className="w-3 h-3 text-emerald-600" />
+                  <span>Article indexé PubMed Central</span>
+                </span>
                 <time dateTime="2021-06-02" className="text-xs font-mono font-medium text-slate-500">
                   2 Juin 2021
                 </time>
@@ -289,6 +349,15 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                   >
                     PMID 34422691
                   </a>
+                  <span>·</span>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373403/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-800 hover:text-teal-950 font-semibold underline decoration-teal-300"
+                  >
+                    PMCID PMC8373403
+                  </a>
                 </div>
               </div>
 
@@ -314,6 +383,15 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                   className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
                 >
                   <span>Notice PubMed (PMID 34422691)</span>
+                </a>
+                <span className="text-slate-300">•</span>
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8373403/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                >
+                  <span>Texte intégral PMC8373403</span>
                 </a>
               </div>
             </article>
@@ -375,7 +453,7 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
               </div>
 
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Résumé :</strong> Étude épidémiologique sur les infections urinaires communautaires à bactéries multirésistantes dans le nord du Maroc et analyse des facteurs de risque.
+                <strong>Résumé :</strong> Étude épidémiologique sur les infections urinaires communautaires à bactéries multirésistantes dans le nord du Maroc et analyse des facteurs de risque. Pagination : 562-569.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-3 border-t border-slate-100">
@@ -516,13 +594,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
           </div>
         </section>
 
-        {/* [À CONFIRMER PAR LE DR MECHAL] Préprint SSRN 2024 (Isolation of Sars-Cov-2 in Cell Cultures) */}
+        {/* [À CONFIRMER PAR LE DR MECHAL] Prépublication SSRN 2024 (Isolation of Sars-Cov-2 in Cell Cultures) */}
         {/* [À CONFIRMER PAR LE DR MECHAL : DOI, lien ou référence complète requis pour les travaux suivants]
              - Déficit en G6PD : Série de 54 cas (2019)
              - Non-conformités pré-analytiques en hémostase (GEHT 2016)
              - Vérification de méthodes de dosage : PTHi 1-84, Glucose sur Architect ci8200
              - Infection urinaire à Trichosporon asahii (Journal de Mycologie Médicale, 2014)
-             - Thèse d'État en Pharmacie : Détection d'Entamoeba gingivalis au niveau des poches parodontales (FMP Rabat, 2014)
         */}
 
         {/* Section Équipement & Contrôle Qualité au Laboratoire Roma */}

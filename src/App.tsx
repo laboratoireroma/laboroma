@@ -11,6 +11,7 @@ import { CandidaturePage } from "./components/CandidaturePage";
 import { PartenariatPage } from "./components/PartenariatPage";
 import { HelicobacterPyloriPage } from "./components/HelicobacterPyloriPage";
 import { PublicationsScientifiquesPage } from "./components/PublicationsScientifiquesPage";
+import { EducationSantePage } from "./components/EducationSantePage";
 import { Footer } from "./components/Footer";
 import { MobileBottomBar } from "./components/MobileBottomBar";
 
@@ -19,10 +20,20 @@ type RouteType =
   | "recrutement"
   | "partenariat"
   | "sensibilisation-helicobacter"
-  | "publications-scientifiques";
+  | "publications-scientifiques"
+  | "education-sante";
 
 function parseHash(hash: string): RouteType {
   const cleanHash = hash.replace(/^#\/?/, "").toLowerCase();
+  if (
+    cleanHash === "education-sante" ||
+    cleanHash === "prevention-sante" ||
+    cleanHash === "education" ||
+    cleanHash === "guide-sante" ||
+    cleanHash === "igra-homa-helicobacter"
+  ) {
+    return "education-sante";
+  }
   if (cleanHash === "recrutement" || cleanHash === "candidature" || cleanHash === "candidatures") {
     return "recrutement";
   }
@@ -90,6 +101,8 @@ export default function App() {
       window.location.hash = "#sensibilisation-helicobacter";
     } else if (newRoute === "publications-scientifiques") {
       window.location.hash = "#publications-scientifiques";
+    } else if (newRoute === "education-sante") {
+      window.location.hash = "#education-sante";
     } else {
       window.location.hash = "";
       setRoute("home");
@@ -112,6 +125,8 @@ export default function App() {
           <HelicobacterPyloriPage onBack={() => navigateTo("home")} />
         ) : route === "publications-scientifiques" ? (
           <PublicationsScientifiquesPage onBack={() => navigateTo("home")} />
+        ) : route === "education-sante" ? (
+          <EducationSantePage onBack={() => navigateTo("home")} />
         ) : (
           <>
             {/* Hero Section with 3 Main Quick Action Buttons */}

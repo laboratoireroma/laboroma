@@ -1,127 +1,51 @@
 # Page des Travaux et Publications Scientifiques du Dr MECHAL Youness
 
-Création d'une page dédiée valorisant l'expertise académique et les publications de recherche du Dr MECHAL Youness, Spécialiste en Biologie Médicale. Cette page renforce l'autorité médicale (E-E-A-T) du Laboratoire Roma, optimise son référencement dans les moteurs d'IA générative (GEO) et explicite les bénéfices concrets de cette rigueur scientifique pour la prise en charge des patients.
+Mise à jour et consolidation rigoureuse de la page valorisant l'expertise académique et les publications de recherche du Dr MECHAL Youness, Pharmacien biologiste (Ancien Interne au CHU Ibn Sina de Rabat). Cette page renforce l'autorité médicale (E-E-A-T) du Laboratoire Roma, optimise son référencement dans les moteurs d'IA générative (GEO) et explicite les bénéfices concrets de cette rigueur scientifique pour la prise en charge des patients.
 
-## Décisions Clés & Choix Confirmés
+## Décisions Clés & Données Factuelles Vérifiées
 
-> [!IMPORTANT]
-> Les options suivantes ont été confirmées lors de la phase de cadrage :
-
-- **Mode d'intégration technique confirmé** : Double accès complet.
-  - Page HTML autonome accessible directement à l'adresse `/publications-dr-mechal-youness.html` pour un hébergement statique optimal sur GitHub Pages et une indexation native par les robots d'indexation et crawlers d'IA sans exécution JavaScript.
-  - Vue intégrée dans l'application React SPA (route hash `#publications-scientifiques` ou `#publications`) pour une navigation instantanée et fluide sans rechargement de page depuis l'accueil.
-- **Points de navigation confirmés** :
-  - **Menu supérieur (TopNav)** : ajout d'un lien « Publications » / « Travaux Scientifiques ».
-  - **Pied de page (Footer)** : ajout dans la section « Espace Professionnel & Carrières ».
-  - **Section Accueil (HeroSection / En-tête)** : ajout d'un lien d'autorité direct (« Découvrir ses travaux de recherche ») au niveau du badge de direction médicale.
-- **Format visuel des publications confirmé** : Cartes éditoriales structurées comprenant le titre bilingue (FR/EN), la revue à comité de lecture, l'année, le nombre de citations indicatif, un résumé vulgarisé expliquant la portée clinique, et les liens directs vérifiables (DOI, PubMed, Google Scholar, ResearchGate).
-- **Terminologie réglementaire stricte** : Utilisation exclusive et systématique des termes **« Spécialiste en Biologie Médicale »** ou **« Biologiste Médical »** (interdiction des termes réducteurs comme « pharmacien biologiste » ou « biologiste » seul).
-
----
-
-## 1. Vue d'Ensemble & Objectifs
-
-### Objectifs Majeurs
-1. **Autorité Médicale E-E-A-T & Confiance Patient** : Établir la légitimité du directeur du laboratoire à travers ses travaux en microbiologie clinique (tuberculose extrapulmonaire, antibiorésistance des infections urinaires, Sars-CoV-2) et en biochimie / hématologie (thalassémies, déficit en G6PD, accréditation pré-analytique).
-2. **Generative Engine Optimization (GEO)** : Structurer des données factuelles, sourcées, datées et balisées en JSON-LD (`Person`, `ScholarlyArticle`, `BreadcrumbList`) pour être directement citées comme source de vérité par Google AI Overviews, ChatGPT, Perplexity et Gemini.
-3. **Pédagogie & Rassurance Clinique** : Montrer au patient comment l'expertise de recherche translationnelle du Dr MECHAL se traduit au quotidien au laboratoire par une précision diagnostique accrue, un contrôle rigoureux des seuils d'alerte et un conseil éclairé aux médecins prescripteurs.
-
----
-
-## 2. Expérience Utilisateur & Structure Visuelle
-
-### Parcours & Enchaînement des Sections
-1. **Fil d'Ariane Sémantique (Breadcrumb)** : `Accueil > Direction Médicale > Travaux & Publications Scientifiques`.
-2. **En-tête H1 & Chapô de Positionnement** :
-   - H1 : *« Travaux et Publications Scientifiques du Dr MECHAL Youness, Spécialiste en Biologie Médicale »*
-   - Chapô : Mise en perspective de son double champ d'expertise en infectiologie / microbiologie clinique et en validation pré-analytique hospitalière.
-3. **Profil Scientifique & Identifiants** :
-   - Parcours hospitalo-universitaire (CHU Ibn Sina Rabat, Faculté de Médecine et de Pharmacie de Rabat).
-   - Identifiant international ORCID vérifié : `0000-0001-8147-6673` avec lien cliquable direct.
-   - Thématiques de recherche clés : Tuberculose extrapulmonaire, épidémiologie de la résistance bactérienne aux antibiotiques, diagnostic moléculaire GeneXpert, hématopathologie et assurance qualité pré-analytique.
-4. **Publications Phares (Revue par les Pairs)** :
-   - *Evaluation of GeneXpert MTB/RIF system performances in the diagnosis of extrapulmonary tuberculosis* (BMC Infectious Diseases, 2019, ~92 citations).
-   - *Multidrug-resistant community-acquired urinary tract infections in a northern region of Morocco: epidemiology and risk factors* (GERMS, 2021).
-   - *Update on the resistance of Escherichia coli isolated from urine specimens in a Moroccan hospital: a review of a 7-year period* (2021).
-   - *Unexpected discovery of hemoglobinopathy C/β° thalassemia* (Clinical Case Reports, 2018).
-   - *Isolation of Sars-Cov-2 in Cell Cultures Has Helped in Better Management of Covid-19 Patients During Hospitalization* (SSRN, 2024).
-5. **Autres Travaux, Communications & Thèse de Doctorat** :
-   - Thèse de Doctorat en Pharmacie (2014, FMP Rabat) : *Détection du protozoaire Entamoeba gingivalis au niveau des poches parodontales*.
-   - Série de cas pédiatriques : Déficit en G6PD (54 cas, 2019).
-   - Qualité & Hémostase : Non-conformités pré-analytiques selon les recommandations du Groupe d'Étude sur l'Hémostase et la Thrombose (GEHT 2016).
-   - Vérification de méthodes de dosage : PTHi 1-84 et glycémie sur automate Architect ci8200.
-   - Mycologie médicale : Infection urinaire rare à *Trichosporon asahii* (Journal de Mycologie Médicale, 2014).
-6. **Bénéfices Concrets pour les Patients du Laboratoire Roma** :
-   - Encadré pédagogique établissant le pont entre la rigueur de la recherche hospitalière et les actes quotidiens du laboratoire (fiabilité du rendu, pertinence des valeurs de référence, détection fine des interférences pré-analytiques).
-7. **Ressources Scientifiques & Profils Externes** :
-   - Cartes d'accès direct vers ORCID, Google Scholar, ResearchGate et la direction médicale du laboratoire.
-8. **Appel à l'Action & Contact Médical** :
-   - Prise de rendez-vous ou demande de renseignements par WhatsApp (`06 10 27 57 85`) et appel fixe (`05 22 28 51 60`).
-
-### Charte Graphique & Respect de l'Existant
-- Palette médicale : Fond `bg-slate-50`, cartes `bg-white` avec bordures subtiles `border-slate-200/80`, teintes teal médical (`#0F766E` / `text-teal-800`), accents rouges doux pour Casablanca et la marque Roma.
-- Typographie : `Plus Jakarta Sans` (titres et corps) et `JetBrains Mono` pour les dates, identifiants ORCID et DOI.
-- Respect de la discipline anti-slop : métadonnées sobres non enrobées dans des pilules statiques excessives, structure sémantique stricte (`<article>`, `<time>`, `<header>`, `<h3>`).
+- **Titre & Statut confirmés** :
+  - « Dr MECHAL Youness, Pharmacien biologiste » (Directeur du Laboratoire d'Analyses Médicales Roma, Casablanca).
+  - « Ancien Interne au CHU Ibn Sina de Rabat ». Formule strictement respectée dans l'ensemble des fichiers sans variantes raccourcies.
+- **Cursus universitaire et hospitalier confirmé** :
+  - **Doctorat en Pharmacie** (Faculté de Médecine et de Pharmacie de Rabat – Université Mohammed V, 2014, thèse : *« Détection du protozoaire Entamoeba gingivalis au niveau des poches parodontales »*), avec internat au CHU Ibn Sina de Rabat.
+  - **Diplôme de Spécialité Médicale (DSM) en Biologie Médicale** (Université Mohammed V de Rabat, 2015-2019).
+  - **Diplôme Universitaire (DU) en Management de la Qualité (MQPAS)** (Université de Bordeaux, 2018).
+  - **Distinction** : Prix du meilleur poster scientifique (Société Marocaine de Chimie Clinique, 2016).
+  - **Affiliations professionnelles** : Membre de la Société Marocaine de Microbiologie Médicale (SMAMM).
+- **Plateau technique & Qualité** :
+  - Mention du plateau technique neuf de dernière génération pour la biochimie, l'hématologie et l'immuno-analyse, soutenu par des contrôles internes stricts et des évaluations externes de la qualité (EEQ).
+- **Fiches des 4 publications scientifiques vérifiées (aucune donnée inventée)** :
+  1. **A (BMC Infect Dis 2019;19(1):1069)** :
+     - Auteurs : Mechal Y, Benaissa E, El mrimar N, Benlahlou Y, Bssaibis F, Zegmout A, Chadli M, Malik YS, Touil N, Abid A, Maleb A, Elouennass M.
+     - Mention « Premier auteur ».
+     - DOI : `10.1186/s12879-019-4687-7` · PMID : `31856744` · PMCID : `PMC6924055`.
+     - Lieu de l'étude : Hôpital militaire d’instruction Mohammed V, Rabat ; CHU Ibn Sina, Rabat.
+  2. **B (GERMS 2021;11(2):189-198)** :
+     - Auteurs : Benaissa E, Mechal Y, et al. (4e auteur).
+     - DOI : `10.18683/germs.2021.1256` · PMID : `34422691` · PMCID : `PMC8373403`.
+  3. **C (GERMS 2021;11(4):562-569)** :
+     - Auteurs : Benaissa E, Mechal Y, et al. (3e auteur).
+     - DOI : `10.18683/germs.2021.1291` · PMID : `35096673` · PMCID : `PMC8789347`.
+  4. **D (Clin Case Rep 2018;6(11):2117-2120)** :
+     - Auteurs : Benlahlou Y, Mechal Y, et al. (5e auteur).
+     - DOI : `10.1002/ccr3.1815` · PMID : `30455903` · PMCID : `PMC6230608`.
+- **Travaux placés en commentaires `[À CONFIRMER PAR LE DR MECHAL]` (retirés du texte public)** :
+  - Prépublication SSRN 2024
+  - Déficit en G6PD : Série de 54 cas (2019)
+  - Non-conformités pré-analytiques en hémostase (GEHT 2016)
+  - Validation de méthodes PTHi 1-84 / Glucose sur automate Architect ci8200
+  - Infection urinaire à Trichosporon asahii (2014)
+- **Sensibilisation & Éducation santé** :
+  - Formulation mise à jour pour le test respiratoire à l'urée : *« Le test respiratoire à l'urée marquée est disponible au Laboratoire Roma, idéalement sur prescription médicale. »*
 
 ---
 
-## 3. Architecture Technique & Balisage SEO/GEO
+## Fichiers Synchronisés & Validés
 
-### Schéma d'Architecture & Flux de Navigation
-
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        Navigation & Entrées                            │
-│  - TopNav (Lien "Publications")                                        │
-│  - HeroSection (Badge Dr MECHAL "Découvrir ses travaux")               │
-│  - Footer (Section "Espace Professionnel & Carrières")                 │
-│  - Sitemap.xml / Moteurs d'IA (Google, Perplexity, ChatGPT)            │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-               ┌────────────────────┴────────────────────┐
-               ▼                                         ▼
-┌─────────────────────────────┐           ┌─────────────────────────────┐
-│  Mode 1: HTML Statique      │           │  Mode 2: React SPA          │
-│  /publications-dr-mechal-   │           │  #publications-scientifiques│
-│  youness.html               │           │  (src/components/           │
-│  - Rendu HTML5 autonome     │           │   PublicationsScientifiques │
-│  - JSON-LD Person & Article │           │   Page.tsx)                 │
-│  - Zero dépendance serveur  │           │  - Navigation instantanée   │
-│  - Compatible GitHub Pages  │           │  - Bouton retour fluide     │
-└─────────────────────────────┘           └─────────────────────────────┘
-```
-
-### Spécifications SEO & Données Structurées (JSON-LD)
-- **Schema `Person`** :
-  - `@type`: `Person`
-  - `name`: `Dr MECHAL Youness`
-  - `jobTitle`: `Spécialiste en Biologie Médicale`
-  - `worksFor`: `Laboratoire d'Analyses Médicales Roma`
-  - `alumniOf`: Faculté de Médecine et de Pharmacie de Rabat, Université de Bordeaux
-  - `sameAs`: Lien ORCID (`https://orcid.org/0000-0001-8147-6673`)
-- **Schema `ScholarlyArticle`** :
-  - Un objet dédié pour chaque publication majeure avec `name`, `headline`, `inLanguage`, `datePublished`, `author`, `publisher`, `citation` et URL/DOI.
-- **Schema `BreadcrumbList`** :
-  - Position 1 : Accueil (`https://laboratoireroma.github.io/laboroma/`)
-  - Position 2 : Publications Scientifiques (`https://laboratoireroma.github.io/laboroma/publications-dr-mechal-youness.html`)
-
----
-
-## 4. Plan de Réalisation Étape par Étape
-
-1. **Création du fichier HTML statique complet** :
-   - Créer `public/publications-dr-mechal-youness.html` avec les balises méta, Open Graph, Twitter Cards, balises de vérification Google, JSON-LD complet et contenu rédactionnel sémantique en français.
-2. **Création du composant React SPA** :
-   - Créer `src/components/PublicationsScientifiquesPage.tsx` avec les mêmes contenus, l'interactivité des filtres/liens, et le bouton de retour à l'accueil.
-3. **Intégration du routage dans `App.tsx`** :
-   - Ajouter la route `publications-scientifiques` / `publications` dans `parseHash` et dans le rendu principal.
-4. **Mise à jour des liens de navigation** :
-   - Dans `src/components/TopNav.tsx` : ajouter l'élément de menu vers les travaux de recherche.
-   - Dans `src/components/HeroSection.tsx` : enrichir le bandeau de présentation du Dr MECHAL pour pointer vers cette nouvelle page.
-   - Dans `src/components/Footer.tsx` : intégrer le lien dans la colonne professionnelle.
-   - Dans `index.html` : ajouter la section pré-rendue correspondante pour les crawlers bruts.
-5. **Mise à jour du fichier `public/sitemap.xml`** :
-   - Ajouter l'URL canonique `https://laboratoireroma.github.io/laboroma/publications-dr-mechal-youness.html` avec priorité 0.8.
-6. **Vérification & Compilation** :
-   - Co-exécution de `compile_applet` et `lint_applet`.
-   - Exécution du build statique de production (`npm run build`).
+1. `public/publications-dr-mechal-youness.html` (Fichier HTML statique canonique avec JSON-LD complet)
+2. `public/publications-scientifiques/index.html` (Redirection/alias avec chemins relatifs d'assets)
+3. `public/publications-scientifiques/publications-dr-mechal-youness.html` (Alias miroir)
+4. `src/components/PublicationsScientifiquesPage.tsx` (Composant React pour la route `#publications-scientifiques`)
+5. `index.html` (Balisage Schema.org fondateur et section pré-rendue pour les robots)
+6. `public/education-prevention-sante.html` & `src/components/EducationSantePage.tsx` (Mise à jour de la disponibilité du test respiratoire à l'urée marquée)

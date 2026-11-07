@@ -13,7 +13,8 @@ interface TopNavProps {
     | "recrutement"
     | "partenariat"
     | "sensibilisation-helicobacter"
-    | "publications-scientifiques";
+    | "publications-scientifiques"
+    | "education-sante";
   onNavigate?: (
     route:
       | "home"
@@ -21,6 +22,7 @@ interface TopNavProps {
       | "partenariat"
       | "sensibilisation-helicobacter"
       | "publications-scientifiques"
+      | "education-sante"
   ) => void;
 }
 
@@ -69,6 +71,12 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
         onNavigate("publications-scientifiques");
       } else {
         window.location.hash = "#publications-scientifiques";
+      }
+    } else if (target === "education-sante" || target === "education" || target === "prevention-sante") {
+      if (onNavigate) {
+        onNavigate("education-sante");
+      } else {
+        window.location.hash = "#education-sante";
       }
     } else {
       // It's a section anchor like #services, #conventions
@@ -190,6 +198,20 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
             className="hover:text-teal-800 transition-colors whitespace-nowrap"
           >
             Horaires & Accès
+          </a>
+
+          {/* Éducation & Prévention Santé : IGRA, HOMA, Helicobacter */}
+          <a
+            href="#education-sante"
+            onClick={(e) => handleLinkClick(e, "education-sante")}
+            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors whitespace-nowrap ${
+              currentRoute === "education-sante"
+                ? "bg-teal-50 text-teal-900 font-bold border border-teal-200/80"
+                : "hover:text-teal-800 hover:bg-slate-100/80 text-teal-900"
+            }`}
+          >
+            <HeartPulse className="w-3.5 h-3.5 text-teal-700" />
+            <span>Éducation Santé</span>
           </a>
 
           {/* Sensibilisation & Santé : Helicobacter pylori */}
@@ -337,6 +359,22 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
             <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider px-1">
               Espace Professionnel & Carrières
             </div>
+
+            <a
+              href="#education-sante"
+              onClick={(e) => handleLinkClick(e, "education-sante")}
+              className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all ${
+                currentRoute === "education-sante"
+                  ? "bg-teal-800 text-white"
+                  : "bg-teal-50/70 hover:bg-teal-100 text-teal-900 border border-teal-200/60"
+              }`}
+            >
+              <HeartPulse className="w-4 h-4 text-teal-700" />
+              <div>
+                <p className="font-bold">Éducation & Prévention Santé</p>
+                <p className="text-[10px] opacity-80 font-normal">Test IGRA, HOMA-IR & Test respiratoire</p>
+              </div>
+            </a>
 
             <a
               href="#sensibilisation-helicobacter"
