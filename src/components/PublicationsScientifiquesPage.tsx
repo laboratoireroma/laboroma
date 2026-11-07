@@ -5,7 +5,6 @@ import {
   ShieldCheck,
   Microscope,
   GraduationCap,
-  Award,
 } from "lucide-react";
 import { LAB_CONTACT, getWhatsAppLink } from "../data/labInfo";
 
@@ -73,8 +72,9 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                 </span>
                 <p className="font-bold text-slate-900 text-base">Dr MECHAL Youness</p>
                 <p className="text-teal-800 font-bold text-xs sm:text-sm">
-                  Pharmacien biologiste · Spécialiste en Biologie Médicale
+                  Pharmacien biologiste
                 </p>
+                {/* Numéro d'inscription à l'Ordre des pharmaciens : [À CONFIRMER PAR LE DR MECHAL] */}
                 <p className="text-slate-500 text-xs">
                   Directeur du Laboratoire d'Analyses Médicales Roma (Casablanca 2 Mars)
                 </p>
@@ -123,24 +123,11 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
                     <span className="text-teal-700 font-bold">•</span>
                     <span><strong>Faculté de Médecine et de Pharmacie de Rabat</strong> – Université Mohammed V.</span>
                   </li>
-                  <li className="flex items-start gap-1.5">
-                    <span className="text-teal-700 font-bold">•</span>
-                    <span>Membre de la <strong>Société Marocaine de Microbiologie Médicale (SMAMM)</strong>.</span>
-                  </li>
+                  {/* Société savante : Membre de la Société Marocaine de Microbiologie Médicale (SMAMM) [À CONFIRMER PAR LE DR MECHAL] */}
                 </ul>
               </div>
 
-              <div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">
-                  Distinctions Scientifiques
-                </span>
-                <p className="text-xs sm:text-sm text-slate-700 flex items-start gap-1.5">
-                  <Award className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                  <span>
-                    <strong>Prix du meilleur poster scientifique (2016)</strong> – Moroccan Society of Clinical Chemistry (Société Marocaine de Chimie Clinique).
-                  </span>
-                </p>
-              </div>
+              {/* Distinction : Prix du meilleur poster scientifique (2016) – Moroccan Society of Clinical Chemistry [À CONFIRMER PAR LE DR MECHAL] */}
             </div>
 
             <div className="space-y-4">
@@ -611,11 +598,11 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
             </div>
 
             <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Plateau technique neuf & politique de contrôle qualité rigoureuse
+              Plateau technique & politique de contrôle qualité rigoureuse
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-              Le Laboratoire d'Analyses Médicales Roma dispose d'un <strong>plateau technique neuf de dernière génération</strong> pour la <strong>Biochimie</strong>, l'<strong>Hématologie</strong> ainsi que l'<strong>Immuno-analyse</strong>, associé à une politique de <strong>contrôle qualité rigoureuse</strong> (contrôles internes quotidiens et évaluations externes de la qualité) garantissant l'exactitude, la reproductibilité et la traçabilité de chaque résultat d'analyse.
+              Le Laboratoire d'Analyses Médicales Roma dispose d'équipements récents pour la <strong>Biochimie</strong>, l'<strong>Hématologie</strong> ainsi que l'<strong>Immuno-analyse</strong>, associé à une politique de <strong>contrôle qualité rigoureuse</strong> (contrôles internes quotidiens et évaluations externes de la qualité) visant à garantir la fiabilité et la traçabilité de chaque analyse.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -691,6 +678,12 @@ export const PublicationsScientifiquesPage: React.FC<PublicationsScientifiquesPa
             <h3 className="text-xl sm:text-2xl font-bold">Besoin d'un renseignement ou d'une analyse médicale ?</h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
               Le Laboratoire Roma vous accueille au 117 Angle Boulevard 2 Mars et Rue de Rome à Casablanca sans rendez-vous, avec service de prélèvement à domicile disponible.
+            </p>
+            <p className="text-[11px] text-slate-400">
+              La transmission d'ordonnances ou de documents médicaux via WhatsApp implique l'acceptation des conditions d'utilisation de cette plateforme tierce.
+            </p>
+            <p className="text-[11px] text-amber-300">
+              En cas d'urgence médicale vitale, contactez immédiatement le SAMU (15) ou la Protection Civile (141).
             </p>
           </div>
 

@@ -250,7 +250,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Quiet copyright */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Laboratoire d'Analyses Médicales Roma Casablanca. Tous droits réservés.</p>
-          <div className="flex items-center gap-4 text-[11px]">
+          <div className="flex flex-wrap items-center gap-3 text-[11px]">
+            <a
+              href="./mentions-legales.html"
+              className="hover:text-slate-300 text-slate-400 transition-colors"
+            >
+              Mentions Légales
+            </a>
+            <span>•</span>
+            <a
+              href="./confidentialite.html"
+              className="hover:text-slate-300 text-slate-400 transition-colors"
+            >
+              Confidentialité
+            </a>
+            <span>•</span>
             <a
               href="#recrutement"
               onClick={(e) => {
@@ -295,7 +309,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Publications Scientifiques
             </a>
             <span>•</span>
-            <span>Direction Médicale : Dr MECHAL Youness, Spécialiste en Biologie Médicale</span>
+            <span>Direction Médicale : Dr MECHAL Youness, Pharmacien biologiste</span>
           </div>
         </div>
       </div>

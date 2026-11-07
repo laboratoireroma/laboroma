@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             <span>Direction : {LAB_CONTACT.director}</span>
           </span>
           <span className="hidden sm:inline text-slate-300">·</span>
-          <span className="text-slate-600 hidden sm:inline">Spécialiste en Biologie Médicale</span>
+          <span className="text-slate-600 hidden sm:inline">Pharmacien biologiste</span>
           <span className="hidden md:inline text-slate-300">·</span>
           <a
             href="#publications-scientifiques"
@@ -62,8 +62,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-              Analyses médicales de pointe, rapides et fiables. Prélèvements sur place et à domicile.
-              Équipements de dernière génération sous la supervision du {LAB_CONTACT.director}.
+              Analyses médicales rigoureuses, rapides et fiables. Prélèvements sur place et à domicile,
+              sous la supervision du {LAB_CONTACT.director}.
             </p>
 
             {/* Quick Unboxed Highlights */}

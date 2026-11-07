@@ -48,9 +48,9 @@ export const ServicesSection: React.FC = () => {
             Services & Analyses Clés
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Le Laboratoire Roma dispose d'un plateau technique neuf de dernière génération pour la biochimie,
-            l'hématologie et l'immuno-analyse, associé à une politique de contrôle qualité rigoureuse pour
-            des résultats précis, reproductibles et transmis dans les meilleurs délais.
+            Le Laboratoire Roma assure les analyses de biochimie, d'hématologie et d'immuno-analyse,
+            associées à une politique de contrôle qualité rigoureuse pour des résultats précis,
+            reproductibles et transmis dans les meilleurs délais.
           </p>
         </div>
 
@@ -174,6 +174,9 @@ export const ServicesSection: React.FC = () => {
               Envoyez-nous simplement une photo sur WhatsApp. Nous vous confirmons immédiatement le
               tarif, la prise en charge et les consignes de jeûne.
             </p>
+            <p className="text-[11px] text-teal-300/90 pt-1">
+              En envoyant votre ordonnance ou vos résultats par WhatsApp, vous acceptez leur transmission via ce service. Une alternative sécurisée est disponible sur demande.
+            </p>
           </div>
 
           <a
@@ -203,7 +206,7 @@ export const ServicesSection: React.FC = () => {
                 </span>
               </div>
               <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                Travaux & Publications Scientifiques du Dr MECHAL Youness, biologiste médical
+                Travaux & Publications Scientifiques du Dr MECHAL Youness, Pharmacien biologiste
               </h4>
               <p className="text-xs text-slate-600 mt-1 max-w-2xl leading-relaxed">
                 Directeur du laboratoire, le Dr MECHAL met au service de vos examens son expérience hospitalière (HMIMV Rabat et CHU Ibn Sina) et ses travaux indexés sur GeneXpert MTB/RIF (BMC Infect Dis), l'antibiorésistance (GERMS) et les hémoglobinopathies.

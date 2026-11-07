@@ -19,7 +19,7 @@ export const LAB_CONTACT = {
   name: "Laboratoire d'Analyses Médicales Roma",
   shortName: "Laboratoire Roma",
   director: "Dr MECHAL Youness",
-  directorTitle: "Biologiste Médical – Directeur du Laboratoire",
+  directorTitle: "Pharmacien biologiste – Directeur du Laboratoire",
   address: "117 Angle Boulevard 2 Mars et Rue de Rome",
   city: "Casablanca",
   country: "Maroc",
@@ -78,17 +78,6 @@ export interface SpecialSchedule {
 }
 
 export const LAB_SPECIAL_SCHEDULES: SpecialSchedule[] = [
-  {
-    date: "2026-11-06",
-    formattedDate: "06-11-2026",
-    label: "Vendredi 6 Novembre 2026",
-    occasion: "Marche Verte",
-    hours: "08h30 – 14h00",
-    openHour: 8,
-    openMinute: 30,
-    closeHour: 14,
-    closeMinute: 0,
-  },
   {
     date: "2026-11-18",
     formattedDate: "18-11-2026",
@@ -420,7 +409,7 @@ export const PRACTICAL_TIPS = [
   {
     title: "Le jeûne est-il obligatoire ?",
     answer:
-      "Un jeûne strict de 10 à 12 heures est indispensable pour le bilan lipidique (cholestérol, triglycérides) et la glycémie à jeun. Pour de nombreuses autres analyses (NFS, sérologies, b-HCG, etc.), le jeûne n'est pas nécessaire. L'eau reste autorisée.",
+      "Le jeûne strict (10 à 12h, eau autorisée) est obligatoire pour la glycémie à jeun. Pour le bilan lipidique (cholestérol, triglycérides), le jeûne est recommandé (certaines situations permettent un prélèvement non à jeun ; demandez conseil au laboratoire). Pour la NFS, le bilan thyroïdien (TSH), le test de grossesse (b-HCG) ou les sérologies, le jeûne n'est pas nécessaire.",
   },
   {
     title: "Quels sont les moyens de paiement acceptés au laboratoire ?",
@@ -499,7 +488,7 @@ export const PATIENT_REVIEWS: PatientReview[] = [
     rating: 5,
     relativeTime: "Il y a 1 mois",
     comment:
-      "Prise en charge rapide pour un bilan pré-opératoire urgent. Résultats fiables transmis en priorité avec explications claires du médecin biologiste. Équipe très compétente et matériel de pointe.",
+      "Prise en charge rapide pour un bilan pré-opératoire urgent. Résultats fiables transmis en priorité avec explications claires du biologiste médical. Équipe très compétente et matériel récent et fiable.",
     initials: "DM",
     avatarBgColor: "bg-slate-800",
     verified: true,

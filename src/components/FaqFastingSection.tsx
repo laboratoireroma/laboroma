@@ -52,11 +52,12 @@ export const FaqFastingSection: React.FC = () => {
           <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200/80 space-y-2">
             <div className="flex items-center gap-2 text-amber-900 font-bold text-sm">
               <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
-              <span>Analyses nécessitant un jeûne strict (10 à 12h)</span>
+              <span>Consignes de Jeûne (eau pure autorisée)</span>
             </div>
             <p className="text-xs text-amber-950/80 leading-relaxed">
-              Glycémie à jeun, Bilan lipidique (Cholestérol total, HDL, LDL, Triglycérides),
-              Apolipoprotéines. Seule l'eau pure reste autorisée (pas de thé, café, lait, ni jus).
+              <strong>Glycémie à jeun :</strong> jeûne strict obligatoire (10 à 12h).
+              <br />
+              <strong>Bilan lipidique (cholestérol, triglycérides) :</strong> jeûne recommandé (certaines situations permettent un prélèvement non à jeun ; demandez conseil au laboratoire).
             </p>
           </div>
 

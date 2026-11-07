@@ -1,3 +1,4 @@
+# robots.txt et sitemap.xml ne sont lus qu'à la racine du domaine ; sur un sous-chemin github.io ils sont ignorés. Soumettre le sitemap via Search Console.
 User-agent: *
 Allow: /
 

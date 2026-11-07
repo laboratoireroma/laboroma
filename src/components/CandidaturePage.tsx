@@ -138,11 +138,12 @@ export const CandidaturePage: React.FC<CandidaturePageProps> = ({ onBack }) => {
 
         {/* Security & Confidentiality Notice */}
         <div className="mt-6 p-4 rounded-2xl bg-white border border-slate-200/80 flex items-start gap-3 text-xs text-slate-600">
-          <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+          <ShieldCheck className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
           <p>
-            <strong>Confidentialité garantie :</strong> Vos données et documents transmis via ce
-            formulaire sont strictement réservés à l'évaluation de votre candidature par la direction
-            médicale du Laboratoire Roma et ne sont jamais communiqués à des tiers.
+            <strong>Protection de vos données :</strong> Les informations et documents transmis via ce formulaire sont hébergés par notre prestataire technique JotForm et strictement réservés au traitement de votre candidature par la direction du Laboratoire Roma. Pour en savoir plus sur vos droits selon la loi 09-08, consultez notre{" "}
+            <a href="./confidentialite.html" className="text-teal-800 underline font-medium hover:text-teal-950">
+              Politique de Confidentialité
+            </a>.
           </p>
         </div>
       </div>
