@@ -48,8 +48,9 @@ export const ServicesSection: React.FC = () => {
             Services & Analyses Clés
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Des équipements d'analyse modernes pour des résultats d'une grande fiabilité. Tous vos
-            prélèvements sont réalisés dans le respect strict des normes d'hygiène et de sécurité.
+            Le Laboratoire Roma dispose d'un plateau technique neuf de dernière génération pour la biochimie,
+            l'hématologie et l'immuno-analyse, associé à une politique de contrôle qualité rigoureuse pour
+            des résultats précis, reproductibles et transmis dans les meilleurs délais.
           </p>
         </div>
 
@@ -202,10 +203,10 @@ export const ServicesSection: React.FC = () => {
                 </span>
               </div>
               <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                Travaux & Publications Scientifiques du Dr MECHAL Youness, Spécialiste en Biologie Médicale
+                Travaux & Publications Scientifiques du Dr MECHAL Youness, biologiste médical
               </h4>
               <p className="text-xs text-slate-600 mt-1 max-w-2xl leading-relaxed">
-                Publications internationales de référence : GeneXpert MTB/RIF (BMC Infectious Diseases), antibiorésistance hospitalière et communautaire (GERMS 2021) et hématologie clinique.
+                Directeur du laboratoire, le Dr MECHAL met au service de vos examens son expérience hospitalière (HMIMV Rabat et CHU Ibn Sina) et ses travaux indexés sur GeneXpert MTB/RIF (BMC Infect Dis), l'antibiorésistance (GERMS) et les hémoglobinopathies.
               </p>
             </div>
           </div>

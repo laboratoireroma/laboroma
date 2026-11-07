@@ -42,8 +42,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              Laboratoire d'analyses de biologie médicale moderne à Casablanca. Analyses de pointe,
-              résultats fiables et rapides. Prélèvements sur place et à domicile.
+              Laboratoire d'analyses médicales à Casablanca. Plateau technique neuf pour la biochimie,
+              l'hématologie et l'immuno-analyse, associé à une politique de contrôle qualité rigoureuse.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-slate-400">
