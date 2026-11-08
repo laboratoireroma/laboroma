@@ -14,14 +14,21 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://laboratoireroma.github.io/laboroma/helicobacter-pylori.html" />
   
+  <!-- Nom du site & Localisation -->
+  <meta name="application-name" content="Laboratoire Roma" />
+  <meta name="apple-mobile-web-app-title" content="Laboratoire Roma" />
+  <meta name="geo.region" content="MA-CAS" />
+  <meta name="geo.placename" content="Casablanca, Maroc" />
+  <meta name="geo.position" content="33.5714;-7.6186" />
+  <meta name="ICBM" content="33.5714, -7.6186" />
+
   <!-- Open Graph & Social Meta -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Laboratoire Roma" />
   <meta property="og:url" content="https://laboratoireroma.github.io/laboroma/helicobacter-pylori.html" />
   <meta property="og:title" content="Helicobacter pylori : Guide Pratique & Dépistage Non Invasif | Laboratoire Roma" />
   <meta property="og:description" content="Tout comprendre sur la bactérie gastrique Helicobacter pylori : signes d'alarme, test respiratoire au Carbone 13, antigène fécal et règles préanalytiques strictes (IPP, antibiotiques)." />
   <meta property="og:image" content="https://laboratoireroma.github.io/laboroma/assets/og-card-1200x630.jpg" />
-  <!-- Visuel de partage 1200x630 dédié : [À FOURNIR PAR LE DR MECHAL] -->
-  <meta property="og:site_name" content="Laboratoire d'Analyses Médicales Roma – Sensibilisation & Santé" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="article:published_time" content="2026-11-05T12:00:00+01:00" />
   <meta property="article:author" content="Dr MECHAL Youness" />
@@ -35,8 +42,11 @@
 
   <meta name="theme-color" content="#0f4c5c" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/aistudio/logo_roma_transparent_b60a769e.png" />
+  <!-- Favicon & Identité Visuelle Officielle -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+  <link rel="shortcut icon" href="https://laboratoireroma.github.io/laboroma/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png" />
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -95,7 +105,11 @@
           "@type": "WebSite",
           "@id": "https://laboratoireroma.github.io/laboroma/#website",
           "url": "https://laboratoireroma.github.io/laboroma/",
-          "name": "Laboratoire d'Analyses Médicales Roma Casablanca"
+          "name": "Laboratoire Roma",
+          "alternateName": [
+            "Laboratoire d'Analyses Médicales Roma",
+            "Laboratoire Roma Casablanca"
+          ]
         },
         "about": [
           {
@@ -134,13 +148,15 @@
           "jobTitle": "Pharmacien biologiste",
           "sameAs": "https://orcid.org/0000-0001-8147-6673",
           "worksFor": {
-            "@type": "DiagnosticLab",
-            "name": "Laboratoire d'Analyses Médicales Roma"
+            "@type": ["MedicalOrganization", "DiagnosticLab"],
+            "name": "Laboratoire d'Analyses Médicales Roma",
+            "alternateName": "Laboratoire Roma"
           }
         },
         "publisher": {
-          "@type": "Organization",
+          "@type": ["MedicalOrganization", "Organization"],
           "name": "Laboratoire d'Analyses Médicales Roma",
+          "alternateName": "Laboratoire Roma",
           "logo": {
             "@type": "ImageObject",
             "url": "https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png"
@@ -150,14 +166,18 @@
         "dateModified": "2026-11-07"
       },
       {
-        "@type": "DiagnosticLab",
+        "@type": ["MedicalOrganization", "DiagnosticLab"],
         "@id": "https://laboratoireroma.github.io/laboroma/#laboratory",
         "name": "Laboratoire d'Analyses Médicales Roma",
+        "legalName": "Laboratoire d'Analyses Médicales Roma",
+        "alternateName": "Laboratoire Roma",
+        "url": "https://laboratoireroma.github.io/laboroma/",
         "telephone": "+212522285160",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "117 Angle Boulevard 2 Mars et Rue de Rome",
           "addressLocality": "Casablanca",
+          "addressRegion": "Casablanca-Settat",
           "postalCode": "20250",
           "addressCountry": "MA"
         }

@@ -9,24 +9,37 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="google-site-verification" content="i-_lMPvvIMxnseu4KuKiK0L_0RCiRokf-UwCmOQCgPU" />
     
+    <!-- Nom du site pour Google et applications -->
+    <meta name="application-name" content="Laboratoire Roma" />
+    <meta name="apple-mobile-web-app-title" content="Laboratoire Roma" />
+
+    <!-- Localisation géographique précise : Casablanca, Maroc -->
+    <meta name="geo.region" content="MA-CAS" />
+    <meta name="geo.placename" content="Casablanca, Maroc" />
+    <meta name="geo.position" content="33.5714;-7.6186" />
+    <meta name="ICBM" content="33.5714, -7.6186" />
+    
     <!-- URL Canonique exacte vers le site GitHub Pages actif -->
     <link rel="canonical" href="https://laboratoireroma.github.io/laboroma/" />
     
-    <!-- Favicon & Icons -->
-    <link rel="icon" type="image/png" href="./assets/aistudio/logo_roma_transparent_b60a769e.png" />
-    <link rel="apple-touch-icon" href="./assets/aistudio/logo_roma_transparent_b60a769e.png" />
+    <!-- Favicon & Identité Visuelle Officielle -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+    <link rel="shortcut icon" href="https://laboratoireroma.github.io/laboroma/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png" />
 
     <!-- OpenGraph & Social Cards -->
     <meta property="og:type" content="business.business" />
+    <meta property="og:site_name" content="Laboratoire Roma" />
     <meta property="og:url" content="https://laboratoireroma.github.io/laboroma/" />
     <meta property="og:title" content="Laboratoire Roma – Analyses Médicales Casablanca | Dr MECHAL Youness" />
     <meta property="og:description" content="Laboratoire d'Analyses Médicales Roma à Casablanca (Dr MECHAL Youness, Pharmacien biologiste). Prélèvements sur place & à domicile, résultats fiables et rapides. Angle Bd 2 Mars et Rue de Rome." />
     <meta property="og:image" content="https://laboratoireroma.github.io/laboroma/assets/og-card-1200x630.jpg" />
-    <!-- Visuel de partage 1200x630 dédié : [À FOURNIR PAR LE DR MECHAL] -->
-    <meta property="og:site_name" content="Laboratoire d’Analyses Médicales Roma" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="business:contact_data:street_address" content="117 Angle Boulevard 2 Mars et Rue de Rome" />
     <meta property="business:contact_data:locality" content="Casablanca" />
+    <meta property="business:contact_data:region" content="Casablanca-Settat" />
     <meta property="business:contact_data:postal_code" content="20250" />
     <meta property="business:contact_data:country_name" content="Maroc" />
     <meta property="business:contact_data:phone_number" content="+212522285160" />
@@ -47,23 +60,52 @@
     <!-- SociableKIT Google Reviews Widget Script -->
     <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
 
-    <!-- Schema.org JSON-LD Graph for Generative Engine Optimization (GEO) -->
+    <!-- Schema.org JSON-LD Graph for Generative Engine Optimization (GEO) & Search Console Rich Results -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": ["DiagnosticLab", "MedicalBusiness", "LocalBusiness"],
+          "@type": "WebSite",
+          "@id": "https://laboratoireroma.github.io/laboroma/#website",
+          "url": "https://laboratoireroma.github.io/laboroma/",
+          "name": "Laboratoire Roma",
+          "alternateName": [
+            "Laboratoire d'Analyses Médicales Roma",
+            "Laboratoire Roma Casablanca",
+            "Laboroma"
+          ],
+          "description": "Site officiel du Laboratoire d'Analyses Médicales Roma à Casablanca. Prélèvements sur place et à domicile, biologie médicale de routine et spécialisée.",
+          "inLanguage": "fr-FR",
+          "publisher": {
+            "@id": "https://laboratoireroma.github.io/laboroma/#laboratory"
+          }
+        },
+        {
+          "@type": [
+            "MedicalOrganization",
+            "DiagnosticLab",
+            "MedicalBusiness",
+            "LocalBusiness"
+          ],
           "@id": "https://laboratoireroma.github.io/laboroma/#laboratory",
           "url": "https://laboratoireroma.github.io/laboroma/",
           "name": "Laboratoire d'Analyses Médicales Roma",
+          "legalName": "Laboratoire d'Analyses Médicales Roma",
           "alternateName": [
+            "Laboratoire Roma",
             "Laboratoire Roma Casablanca",
             "Laboratoire Rome Casablanca",
             "Laboratoire d'Analyses Médicales Dr MECHAL Youness"
           ],
           "image": "https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png",
-          "logo": "https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://laboratoireroma.github.io/laboroma/#logo",
+            "url": "https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png",
+            "contentUrl": "https://laboratoireroma.github.io/laboroma/assets/aistudio/logo_roma_transparent_b60a769e.png",
+            "caption": "Logo officiel du Laboratoire d'Analyses Médicales Roma Casablanca"
+          },
           "description": "Laboratoire d'analyses médicales à Casablanca dirigé par le Dr MECHAL Youness, Pharmacien biologiste. Hématologie, biochimie clinique, hormonologie, sérologie, parasitologie, bilans urgents et service de prélèvements à domicile à Casablanca. Conventionné CNSS, CNOPS, CMIM, Wafa Assurance et FOS-Halieutis.",
           "telephone": "+212522285160",
           "contactPoint": [
@@ -351,15 +393,15 @@
     <!-- Contenu pré-rendu sémantique directement dans le HTML initial pour les robots d'IA et crawlers sans JavaScript -->
     <div id="root">
       <header style="padding: 1rem; border-bottom: 1px solid #e2e8f0; background: #fff;">
-        <p><strong>Laboratoire d'Analyses Médicales Roma</strong> – Casablanca</p>
+        <p><strong>Laboratoire Roma</strong> – Nom officiel : <strong>Laboratoire d'Analyses Médicales Roma</strong> · Casablanca, Maroc</p>
         <p>Direction Médicale : Dr MECHAL Youness, Pharmacien biologiste (Ancien Interne au CHU Ibn Sina de Rabat)</p>
         <p>Téléphone fixe : <a href="tel:+212522285160">05 22 28 51 60</a> | Mobile / WhatsApp : <a href="tel:+212610275785">06 10 27 57 85</a></p>
-        <p>Adresse : 117 Angle Boulevard 2 Mars et Rue de Rome, Casablanca, Maroc</p>
+        <p>Adresse : 117 Angle Boulevard 2 Mars et Rue de Rome, 20250 Casablanca, Maroc</p>
         <p>Horaires habituels : Du Lundi au Vendredi de 07h30 à 18h30 (non-stop) | Samedi de 08h00 à 13h00 | <strong>Ouverture exceptionnelle le 18-11-2026 (Fête de l'Indépendance) de 08h30 à 14h00</strong> | Dimanche fermé</p>
       </header>
 
       <main style="padding: 1.5rem; max-width: 1200px; margin: 0 auto;">
-        <h1>Laboratoire d'Analyses Médicales Roma à Casablanca</h1>
+        <h1>Laboratoire Roma – Laboratoire d'Analyses Médicales Roma à Casablanca</h1>
         <p>Analyses médicales rigoureuses, rapides et fiables. Prélèvements sur place et à domicile. Dirigé par le Dr MECHAL Youness, Pharmacien biologiste.</p>
 
         <section>
