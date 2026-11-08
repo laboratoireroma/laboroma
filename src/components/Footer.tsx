@@ -266,6 +266,23 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </a>
             <span>•</span>
             <a
+              href="./plan-du-site.html"
+              className="hover:text-slate-300 text-slate-400 transition-colors"
+            >
+              Plan du site
+            </a>
+            <span>•</span>
+            <a
+              href="./sitemap.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-slate-300 text-slate-400 transition-colors"
+              title="Fichier Sitemap XML"
+            >
+              Sitemap XML
+            </a>
+            <span>•</span>
+            <a
               href="#recrutement"
               onClick={(e) => {
                 e.preventDefault();
