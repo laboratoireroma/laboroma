@@ -266,6 +266,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </a>
             <span>•</span>
             <a
+              href="./tarifs-analyses.html"
+              className="text-teal-400 hover:text-teal-300 font-semibold transition-colors"
+            >
+              Tarifs des Analyses
+            </a>
+            <span>•</span>
+            <a
               href="./plan-du-site.html"
               className="hover:text-slate-300 text-slate-400 transition-colors"
             >

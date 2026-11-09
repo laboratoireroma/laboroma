@@ -1,6 +1,6 @@
 {
-  "summary":  "Plan d'implémentation et de vérification finalisé : Rétablissement du titre de Pharmacien biologiste, validation de l'affiliation Ancien Interne au CHU Ibn Sina de Rabat, correction des identifiants des 4 publications scientifiques, mise à jour de la disponibilité du test respiratoire à l'urée marquée, et validation de compilation/lint.",
-  "updatedAt":  "2026-11-07T17:16:45.282609009Z",
+  "summary":  "Plan d'implémentation pour la création de la page complète et autonome des Tarifs des Analyses de Biologie Médicale du Laboratoire Roma (Casablanca), conforme à la nomenclature officielle marocaine (Arrêtés n° 1796-03 et n° 827-12, lettre clé B à 1,10 DH conventionnel et 1,34 DH non conventionnel), avec recherche instantanée, filtres par spécialité, calcul automatique, affichage réactif et responsive, et intégration dans l'écosystème du site web.",
+  "updatedAt":  "2026-11-09T22:04:57.744869432Z",
   "requestFeedback":  true,
   "userFacing":  true
 }

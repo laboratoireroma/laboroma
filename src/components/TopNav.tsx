@@ -5,7 +5,7 @@ import {
   getLabCurrentStatus,
   getActiveSpecialSchedules,
 } from "../data/labInfo";
-import { Phone, MessageSquare, MapPin, Briefcase, Handshake, Menu, X, HeartPulse, BookOpen } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Briefcase, Handshake, Menu, X, HeartPulse, BookOpen, FileText } from "lucide-react";
 
 interface TopNavProps {
   currentRoute?:
@@ -437,6 +437,17 @@ export const TopNav: React.FC<TopNavProps> = ({ currentRoute = "home", onNavigat
               <div>
                 <p className="font-bold">Travaux & Publications Scientifiques</p>
                 <p className="text-[10px] opacity-80 font-normal">Recherche du Dr MECHAL Youness</p>
+              </div>
+            </a>
+
+            <a
+              href="./tarifs-analyses.html"
+              className="flex items-center gap-2.5 p-3 rounded-xl text-xs font-bold transition-all bg-teal-50/70 hover:bg-teal-100 text-teal-900 border border-teal-200/60"
+            >
+              <FileText className="w-4 h-4 text-teal-700" />
+              <div>
+                <p className="font-bold">Tarifs des Analyses (Nomenclature)</p>
+                <p className="text-[10px] opacity-80 font-normal">423 actes cotés · Tarifs conventionnels & publics</p>
               </div>
             </a>
           </div>

@@ -1,0 +1,3446 @@
+[
+  {
+    "c": "B100",
+    "n": "Acide urique sanguin",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B101",
+    "n": "Albuminémie (Méthode immunologique)",
+    "b": 60,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B102",
+    "n": "Ammoniémie",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B103",
+    "n": "Bilirubine (Totale Directe et Indirecte)",
+    "b": 70,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B104",
+    "n": "Calcium",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B105",
+    "n": "Chlore",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B106",
+    "n": "Cholestérol total",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B107",
+    "n": "Cholestérol estérifié",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B108",
+    "n": "Cholestérol HDL",
+    "b": 50,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B109",
+    "n": "Cholesterol LDL",
+    "b": 50,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B110",
+    "n": "Cholestérol HDL+LDL",
+    "b": 80,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B111",
+    "n": "Créatinine",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B112",
+    "n": "Electrophorèse de l'Hémoglobine",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B113",
+    "n": "Electrophorèse des lipides",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B114",
+    "n": "Electrophorèse des protides",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B115",
+    "n": "Fer sérique",
+    "b": 60,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B116",
+    "n": "Fer sérique + CTF",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B117",
+    "n": "Fructosamine",
+    "b": 80,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B118",
+    "n": "Glycémie",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B119",
+    "n": "Hémoglobine glycosylée",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B120",
+    "n": "Ionogramme complet (Na, K, Cl, Prot, RA)",
+    "b": 100,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B121",
+    "n": "Lipides",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B122",
+    "n": "Lipoprotéine A",
+    "b": 150,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B123",
+    "n": "Lipoprotéine B",
+    "b": 150,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B124",
+    "n": "Lipoprotéines A+B",
+    "b": 250,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B125",
+    "n": "Lithium",
+    "b": 50,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B126",
+    "n": "Magnésium Plasmatique",
+    "b": 60,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B127",
+    "n": "Magnésium Erythrocytaire",
+    "b": 80,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B128",
+    "n": "Oxalates",
+    "b": 180,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B129",
+    "n": "Phosphore minéral",
+    "b": 40,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B130",
+    "n": "Protéines",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B131",
+    "n": "Potassium",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B132",
+    "n": "Réserve Alcaline",
+    "b": 40,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B133",
+    "n": "Sodium",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B134",
+    "n": "Triglycérides",
+    "b": 50,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B135",
+    "n": "Urée",
+    "b": 30,
+    "cat": "Biochimie Sanguine",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B136",
+    "n": "Aldolase",
+    "b": 100,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B137",
+    "n": "Amylase",
+    "b": 100,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B138",
+    "n": "Creatinine phosphokinase CPK",
+    "b": 100,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B139",
+    "n": "Creatinine phosphokinase CPK (MB)",
+    "b": 200,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B140",
+    "n": "G6 PDH",
+    "b": 100,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B141",
+    "n": "Gamma glutamyl transférase (G G T)",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B142",
+    "n": "Lacticodeshydrogenase LDH",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B143",
+    "n": "Phosphatases Alcalines",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B144",
+    "n": "Phosphatases acides",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B145",
+    "n": "Phosphatases prostatiques",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B146",
+    "n": "Transaminases O (TGO)",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B147",
+    "n": "Transaminases P (TGP)",
+    "b": 50,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B148",
+    "n": "Lipase",
+    "b": 100,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B149",
+    "n": "Troponine",
+    "b": 250,
+    "cat": "Enzymologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B150",
+    "n": "B H CG quantitatif",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B151",
+    "n": "B H CG qualitatif",
+    "b": 100,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B152",
+    "n": "17 B Oestradiol",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B153",
+    "n": "Cortisol",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B154",
+    "n": "Ferritine",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B155",
+    "n": "Insuline",
+    "b": 300,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B156",
+    "n": "L H",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B157",
+    "n": "Progestérone",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B158",
+    "n": "Prolactine",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B159",
+    "n": "Triiodothyronine :T3 ou FT3",
+    "b": 200,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B160",
+    "n": "Thyroxine :T4 ou FT4",
+    "b": 200,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B161",
+    "n": "Thyroxine libre: T4 libre",
+    "b": 200,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B162",
+    "n": "Testostérone",
+    "b": 300,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B163",
+    "n": "TSH",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B164",
+    "n": "T S H ultra sensible",
+    "b": 250,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B165",
+    "n": "Triiodothyronine libre :T3L",
+    "b": 300,
+    "cat": "Hormonologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B166",
+    "n": "Acétone (recherche)",
+    "b": 10,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B167",
+    "n": "Acide Urique",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B168",
+    "n": "Calcium",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B169",
+    "n": "Chlore",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B170",
+    "n": "Créatinine",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B171",
+    "n": "Electrophorèse des Protéines urinaires",
+    "b": 180,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B172",
+    "n": "Identification d'un calcul urinaire",
+    "b": 80,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B173",
+    "n": "PH",
+    "b": 10,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B174",
+    "n": "Phosphore minéral",
+    "b": 40,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B175",
+    "n": "Potassium",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B176",
+    "n": "Protéine (recherche)",
+    "b": 20,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B177",
+    "n": "Protéine (dosage)",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B178",
+    "n": "Sédiment minéral",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B179",
+    "n": "Sodium",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B180",
+    "n": "Sucre (recherche)",
+    "b": 10,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B181",
+    "n": "Sucre (Recherche+dosage)",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B182",
+    "n": "Urée",
+    "b": 30,
+    "cat": "Examens Urinaires",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B183",
+    "n": "Acide 5 Hydroxyindol acétique (5HIA)",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B184",
+    "n": "Acide Vanil Mandélique (VMA)",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B185",
+    "n": "Acide Homovanilique",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B186",
+    "n": "Catécholamines",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B187",
+    "n": "17 Cétostéroides",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B188",
+    "n": "Dérivés méthoxylés: (Métanéphrines Normétanéphrines)",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B189",
+    "n": "Phenolsteroides",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B190",
+    "n": "Porphyrines (recherche)",
+    "b": 100,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B191",
+    "n": "Porphyrines (dosage)",
+    "b": 150,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B192",
+    "n": "Prégnandiol",
+    "b": 250,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B193",
+    "n": "Prolans B",
+    "b": 200,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B194",
+    "n": "Test de grossesse",
+    "b": 80,
+    "cat": "Hormonologie Urinaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B195",
+    "n": "Chlore",
+    "b": 30,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B196",
+    "n": "Electrophorèse des protéines du LCR",
+    "b": 180,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B197",
+    "n": "Fructose spermatique",
+    "b": 200,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B198",
+    "n": "Glucose",
+    "b": 20,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B199",
+    "n": "Identification d'un calcul vésical",
+    "b": 80,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B200",
+    "n": "Protéines",
+    "b": 30,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B201",
+    "n": "Recherche et identification d'Antigènes bactériens Solubles dans le LCR",
+    "b": 250,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B202",
+    "n": "Rivalta",
+    "b": 20,
+    "cat": "Autres Liquides Biologiques",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B203",
+    "n": "Clearance: de l'Acide urique",
+    "b": 50,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B204",
+    "n": "Clearance: de l'Urée",
+    "b": 50,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B205",
+    "n": "Clearance: de la créatinine",
+    "b": 50,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B206",
+    "n": "Epreuve d'hyperglycémie provoquée par voie orale (HGPO)",
+    "b": 150,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B207",
+    "n": "HLM(hématies-leucocytes-minute)Test d'Addis",
+    "b": 30,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B208",
+    "n": "Test au D - xylose",
+    "b": 180,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B209",
+    "n": "Test LH-RH sur FSH ou LH",
+    "b": 700,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B210",
+    "n": "Test LH-RH sur FSH et LH",
+    "b": 1200,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B211",
+    "n": "Test au TRH ( 4 temps)",
+    "b": 700,
+    "cat": "Épreuves Fonctionnelles",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B212",
+    "n": "Adénogramme",
+    "b": 75,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B213",
+    "n": "Goutte épaisse",
+    "b": 50,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B214",
+    "n": "Hématocrite",
+    "b": 20,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B215",
+    "n": "Hémoglobine",
+    "b": 30,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B216",
+    "n": "Numération Formule (Globules rouges/Blancs/plaquettes)",
+    "b": 80,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B217",
+    "n": "Numération des Plaquettes",
+    "b": 30,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B218",
+    "n": "Myélogramme: Etude cytologique",
+    "b": 120,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B219",
+    "n": "Myélogramme: Etude cytochimique",
+    "b": 120,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B220",
+    "n": "Recherche d'hématies ponctuées",
+    "b": 20,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B221",
+    "n": "Résistance globulaire",
+    "b": 50,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B222",
+    "n": "Réticulocytes",
+    "b": 30,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B223",
+    "n": "Vitesse de sédimentation",
+    "b": 30,
+    "cat": "Hématologie - Cytologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B224",
+    "n": "Coombs Direct/Coombs indirect",
+    "b": 60,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B225",
+    "n": "Recherche d'agglutinines irrégulières:RAI",
+    "b": 40,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B226",
+    "n": "Recherche et dosage d'agglutinines irrégulières",
+    "b": 100,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B227",
+    "n": "Cross match :Une poche",
+    "b": 110,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B228",
+    "n": "Cross match: chaque poche supplémentaire",
+    "b": 60,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B229",
+    "n": "Cross match :Groupe ABO et Rhésus",
+    "b": 60,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B230",
+    "n": "Phénotype",
+    "b": 100,
+    "cat": "ImmunoHématologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B231",
+    "n": "Dosage des Facteurs de la coagulation autre que : VIII- IX - XIII",
+    "b": 75,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B232",
+    "n": "Dosage des facteurs VIII-IX ou XIII",
+    "b": 200,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B233",
+    "n": "Fibrinogène",
+    "b": 40,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B234",
+    "n": "Héparinémie",
+    "b": 120,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B235",
+    "n": "PDF",
+    "b": 200,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B236",
+    "n": "Taux de prothrombine",
+    "b": 40,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B237",
+    "n": "Temps de saignements (TS)",
+    "b": 30,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B238",
+    "n": "TS + Temps de coagulation",
+    "b": 50,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B239",
+    "n": "Temps de céphaline kaolin (TCK)",
+    "b": 40,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B240",
+    "n": "Temps de Howell",
+    "b": 40,
+    "cat": "Hémostase",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B241",
+    "n": "Cytologie. Culture. Identification (Tout examen cytobactériologique)",
+    "b": 90,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B242",
+    "n": "Antibiogramme",
+    "b": 60,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B243",
+    "n": "Sulfamidogramme en cas de prescription isolée",
+    "b": 60,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B244",
+    "n": "Cytologie isolée",
+    "b": 20,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B245",
+    "n": "Examen parasitologique urinaire ou vaginal",
+    "b": 20,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B246",
+    "n": "Examen mycologique: Recherche",
+    "b": 30,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B247",
+    "n": "Examen mycologique: (culture, identification)",
+    "b": 60,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B248",
+    "n": "Recherche de BK + Concentration",
+    "b": 35,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B249",
+    "n": "Culture sur milieu de Lowenstein",
+    "b": 30,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B250",
+    "n": "Culture (Aéorobie-Anaérobie)",
+    "b": 80,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B251",
+    "n": "Hémoculture :Identification",
+    "b": 30,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B252",
+    "n": "Recherche Chlamydiae direct par lA ou IF",
+    "b": 200,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B253",
+    "n": "Recherche Mycoplasmes par culture",
+    "b": 200,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B254",
+    "n": "Parasitologie des selles (Examen direct + enrichisement)",
+    "b": 40,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B255",
+    "n": "Coproculture + identification:",
+    "b": 100,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B256",
+    "n": "Recherche de sang dans les selles par méthode calorimétrique",
+    "b": 60,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B257",
+    "n": "Recherche de sang dans les selles par méthode Immunologique",
+    "b": 150,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B258",
+    "n": "Coprologie fonctionnelle",
+    "b": 150,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B259",
+    "n": "Rotavirus (recherche)",
+    "b": 200,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B260",
+    "n": "Adénovirus",
+    "b": 200,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B261",
+    "n": "Scotch test",
+    "b": 20,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B262",
+    "n": "Ectoparasites (gale) recherche",
+    "b": 50,
+    "cat": "Microbiologie & Parasitologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B263",
+    "n": "Antistaphylolysine",
+    "b": 50,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B264",
+    "n": "Antistreptodornase",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B265",
+    "n": "Antistreptokinase",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B266",
+    "n": "Antistreptolysine (recherche , titrage)",
+    "b": 80,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B267",
+    "n": "Antistreptohyaluronidase",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B268",
+    "n": "Brucellose (Wright)",
+    "b": 60,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B269",
+    "n": "Chlamydiae trachomatis",
+    "b": 180,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B270",
+    "n": "Hélicobacter pylori",
+    "b": 180,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B271",
+    "n": "Diphtérie",
+    "b": 190,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B272",
+    "n": "Gonococcie",
+    "b": 150,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B273",
+    "n": "Léptospirose",
+    "b": 150,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B274",
+    "n": "Listériose",
+    "b": 250,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B275",
+    "n": "Maladie de Lyme",
+    "b": 250,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B276",
+    "n": "Mycoplasmes génitaux (hominis et uréalyticum)",
+    "b": 180,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B277",
+    "n": "Mycoplasma pneumoniae",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B278",
+    "n": "Ricketlsiose",
+    "b": 180,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B279",
+    "n": "Salmonellose (Widal et Félix)",
+    "b": 80,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B280",
+    "n": "ShigeIlose : l'espèce",
+    "b": 75,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B281",
+    "n": "Streptozyme",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B282",
+    "n": "Sérologie du BK",
+    "b": 200,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B283",
+    "n": "Sérologie de la Syphilis: VDRL qualitatif",
+    "b": 20,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B284",
+    "n": "Sérologie de la Syphilis: VDRL quantitatif",
+    "b": 60,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B285",
+    "n": "Sérologie de la Syphilis: TPHA qualitatif",
+    "b": 50,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B286",
+    "n": "Sérologie de la Syphilis: TPHA quantitatif",
+    "b": 100,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B287",
+    "n": "Sérologie de la Syphilis: Nelson",
+    "b": 500,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B288",
+    "n": "Sérologie de la Syphilis: FT A Absorbens IgG",
+    "b": 120,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B289",
+    "n": "Sérologie de la Syphilis: IgM",
+    "b": 280,
+    "cat": "Sérologie Bactérienne",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B290",
+    "n": "Ankylostomiase",
+    "b": 300,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B291",
+    "n": "Amibiase",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B292",
+    "n": "Aspergillose",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B293",
+    "n": "Bilharziose",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B294",
+    "n": "Hydatidose (par hémaglutination)",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B295",
+    "n": "Blastomycose",
+    "b": 75,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B296",
+    "n": "Candidose",
+    "b": 200,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B297",
+    "n": "Coccidiomycose",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B298",
+    "n": "Cryptococcose",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B299",
+    "n": "Criptosporidiose",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B300",
+    "n": "Cysticércose",
+    "b": 315,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B301",
+    "n": "Distomatose",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B302",
+    "n": "Filariose",
+    "b": 225,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B303",
+    "n": "Histoplasmose",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B304",
+    "n": "Leichmaniose",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B305",
+    "n": "Paludisme",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B306",
+    "n": "Toxocarose",
+    "b": 315,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B307",
+    "n": "Toxoplasmose IgG",
+    "b": 100,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B308",
+    "n": "Toxoplasmose IgM",
+    "b": 150,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B309",
+    "n": "Taenia",
+    "b": 90,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B310",
+    "n": "Trichinose",
+    "b": 225,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B311",
+    "n": "Trichomonas",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B312",
+    "n": "Trypanosome",
+    "b": 110,
+    "cat": "Sérologie Parasitaire",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B313",
+    "n": "Adénovirus",
+    "b": 110,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B314",
+    "n": "Grippe antigène-B",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B315",
+    "n": "Hépatite A : IgG",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B316",
+    "n": "Hépatite A : IgM",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B317",
+    "n": "Hépatite B: AgHbs",
+    "b": 120,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B318",
+    "n": "Hépatite B : Ac anti Hbs",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B319",
+    "n": "Hépatite B : Ag Hbe",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B320",
+    "n": "Hépatite B : Ac anti Hbe",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B321",
+    "n": "Hépatite B: Ac anti Hbc",
+    "b": 250,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B322",
+    "n": "Hépatite B: Ac anti Hbc IgM",
+    "b": 300,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B323",
+    "n": "Hépatite B : ADN par PCR",
+    "b": 600,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B324",
+    "n": "Hépatite C : Dépistage",
+    "b": 300,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B325",
+    "n": "Hépatite C : test de confirmation",
+    "b": 600,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B326",
+    "n": "Hépatite C : ARN par PCR",
+    "b": 900,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B327",
+    "n": "Herpes virus simplex type I (lgG ou IgM)",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B328",
+    "n": "Herpes virus simplex type Il (lgG ou IgM)",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B329",
+    "n": "HIV 1 + HIV (1 +2) Dépistage",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B330",
+    "n": "Westernblot de confirmation",
+    "b": 600,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B331",
+    "n": "Charge virale HIV",
+    "b": 900,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B332",
+    "n": "Mononucleose infectieuse : *MNI Test",
+    "b": 50,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B333",
+    "n": "Mononucléose : *Paul et Bunnelle Davidson",
+    "b": 80,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B334",
+    "n": "Mononucléose : *Ac EBNA",
+    "b": 180,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B335",
+    "n": "Mononucléose : *Ac VCA (lgG+lgM)",
+    "b": 180,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B336",
+    "n": "Mononucléose : *AcEA",
+    "b": 180,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B337",
+    "n": "Oreillons (lgG+lgM)",
+    "b": 180,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B338",
+    "n": "Para influenzae (paramyxovirus)",
+    "b": 110,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B339",
+    "n": "Coxackie",
+    "b": 100,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B340",
+    "n": "Poliomyélite",
+    "b": 110,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B341",
+    "n": "Rotavirus",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B342",
+    "n": "Rougeole IgG ou IgM",
+    "b": 330,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B343",
+    "n": "Rubéole IgG",
+    "b": 150,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B344",
+    "n": "Rubéole IgM",
+    "b": 400,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B345",
+    "n": "Varicelle et Zona",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B346",
+    "n": "Virus Syncitial respiratoire (VRS)",
+    "b": 200,
+    "cat": "Sérologie Virale",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B347",
+    "n": "Auto anticorps anti nucléaires",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B348",
+    "n": "Anticorps anti thyroidiens : AC anti Microsomaux",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B349",
+    "n": "Anticorps anti thyroidiens : AC anti Thyroglobulines",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B350",
+    "n": "Complément total CH50",
+    "b": 100,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B351",
+    "n": "Dosage C3",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B352",
+    "n": "Dosage C4",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B353",
+    "n": "Dosage C1 Inhibiteur estérase",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B354",
+    "n": "IgE totales",
+    "b": 200,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B355",
+    "n": "IgE spécifiques ou Rast : Allergène unique",
+    "b": 180,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B356",
+    "n": "IgE spécifiques ou Rast : A partir du 3ème allergène (chacun)",
+    "b": 140,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B357",
+    "n": "Test multi allergènes",
+    "b": 300,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B358",
+    "n": "Immunofixation des Protides (ou Immunoéléctrophorèse )",
+    "b": 600,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B359",
+    "n": "Marqueur Tumoral :antigene carcino embryonnaire : ACE",
+    "b": 250,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B360",
+    "n": "Marqueur Tumoral :Alpha foeto proteine : AFP",
+    "b": 250,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B361",
+    "n": "Marqueur Tumoral :Antigene prostatique spécifique : PSA",
+    "b": 300,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B362",
+    "n": "Marqueur Tumoral : Ca 125",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B363",
+    "n": "MarqueurTumoral : Ca 15-3",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B364",
+    "n": "Marqueur Tumoral : Ca 19-9",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B365",
+    "n": "Marqueur Tumoral : Ca 50",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B366",
+    "n": "Marqueur Tumoral : Ca 724",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B367",
+    "n": "Marqueur Tumoral : NSE",
+    "b": 400,
+    "cat": "Marqueurs Tumoraux",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B368",
+    "n": "Test au latex",
+    "b": 50,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B369",
+    "n": "Réaction de waaler rose",
+    "b": 50,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B370",
+    "n": "C R P (Protéine C réactive)",
+    "b": 100,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B371",
+    "n": "Haptoglobine",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B372",
+    "n": "Orosomucoides",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B373",
+    "n": "Transferrine",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B374",
+    "n": "Alpha 1 Antitrypsine",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B375",
+    "n": "IgG totales",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B376",
+    "n": "IgA totales",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B377",
+    "n": "IgM totales",
+    "b": 150,
+    "cat": "Immunologie",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B378",
+    "n": "Crèatorrhée",
+    "b": 100,
+    "cat": "Divers",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B379",
+    "n": "Spermogramme",
+    "b": 100,
+    "cat": "Divers",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B380",
+    "n": "Spermocytogramme",
+    "b": 150,
+    "cat": "Divers",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B381",
+    "n": "Stéatorrhée",
+    "b": 300,
+    "cat": "Divers",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B382",
+    "n": "Test de HUHNER",
+    "b": 120,
+    "cat": "Divers",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B383",
+    "n": "17 Hydroxyprogestérone",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B384",
+    "n": "25 Hydroxy cholecalciférol",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B385",
+    "n": "ACTH",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B386",
+    "n": "ADH",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B387",
+    "n": "ADN Viral HBV",
+    "b": 600,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B388",
+    "n": "Aldostérone",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B389",
+    "n": "Aluminium",
+    "b": 180,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B390",
+    "n": "Androstenédiol",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B391",
+    "n": "Anticorps Anti cannaux biliaires",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B392",
+    "n": "Anticorps Anti Cartilage",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B393",
+    "n": "Anticorps Anti cellules nerveuses",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B394",
+    "n": "Anticorps Anti E C T",
+    "b": 500,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B395",
+    "n": "Anticorps Anti Facteur intrisèque",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B396",
+    "n": "Anticorps Anti organes (autres)",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B397",
+    "n": "Anticorps Anti Plaquettes fixées",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B398",
+    "n": "Anticorps Anti T3",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B399",
+    "n": "Anticorps Anti T4",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B400",
+    "n": "ARN Viral HCV",
+    "b": 900,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B401",
+    "n": "Ca 50",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B402",
+    "n": "Calcitonine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B403",
+    "n": "Carnitine libre",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B404",
+    "n": "Charge Virale H IV",
+    "b": 900,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B405",
+    "n": "Citrate dans le sperme",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B406",
+    "n": "Complément C2",
+    "b": 240,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B407",
+    "n": "Complément C5",
+    "b": 150,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B408",
+    "n": "Delta 4 Androsténe diane",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B409",
+    "n": "DHA",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B410",
+    "n": "DHA Sulfate",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B411",
+    "n": "DHT",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B412",
+    "n": "EBV:EARL y OU VCA (lgG+lgM) ou EBNA chacun",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B413",
+    "n": "ECA",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B414",
+    "n": "Elastase",
+    "b": 600,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B415",
+    "n": "Erytropïoetine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B416",
+    "n": "Fibronectine",
+    "b": 150,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B417",
+    "n": "Gastrine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B418",
+    "n": "G H ou STH",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B419",
+    "n": "Glucagon",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B420",
+    "n": "Hépatite E",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B421",
+    "n": "Hépatite Delta",
+    "b": 300,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B422",
+    "n": "Hydroxyproline",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B423",
+    "n": "IgG 4 (sous classe)",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B424",
+    "n": "Il Deoxycortisol",
+    "b": 300,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B425",
+    "n": "Médicaments (digoxine théophylline)chacun",
+    "b": 300,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B426",
+    "n": "Nelson",
+    "b": 500,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B427",
+    "n": "Ostéocalcine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B428",
+    "n": "Parathormone (PTH)",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B429",
+    "n": "Peptide C",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B430",
+    "n": "Rénine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B431",
+    "n": "Sérotonine",
+    "b": 300,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B432",
+    "n": "Somatomédine C",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B433",
+    "n": "TBG",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B434",
+    "n": "Te BG",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B435",
+    "n": "Test à la STH",
+    "b": 1200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B436",
+    "n": "Thyrocalcitonine",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B437",
+    "n": "Virus (culture)",
+    "b": 300,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B438",
+    "n": "Vitamine B 12",
+    "b": 400,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B439",
+    "n": "Vitamine D",
+    "b": 450,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B440",
+    "n": "Autres vitamines (K-A-E) chacune",
+    "b": 800,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B441",
+    "n": "Zinc dans le sperme",
+    "b": 200,
+    "cat": "Transmission à l'étranger",
+    "ar": "1796-03"
+  },
+  {
+    "c": "B442",
+    "n": "Osmolarité sang (Si Prescription isolée)",
+    "b": 100,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B443",
+    "n": "Osmolarité \"urine \" (Si Prescription isolée)",
+    "b": 100,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B444",
+    "n": "Alpha 2 macroglobuline-par immunomarquage",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B445",
+    "n": "Acide lactique",
+    "b": 100,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B446",
+    "n": "Débit de Filtration Glomérulaire-DFG",
+    "b": 50,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B447",
+    "n": "Cryoglobulines recherche",
+    "b": 70,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B448",
+    "n": "Cryoglobulines recherche+Typage",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B449",
+    "n": "Gazométrie (PH,pCO2,pO2,SatO2)",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B450",
+    "n": "Myoglobine-Technique Immunoenzymatique",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B451",
+    "n": "Enzyme de conversion de l'angiotensine",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B452",
+    "n": "Beta2microglobuline-par immunomarquage",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B453",
+    "n": "Homocystéine- par immunomarquage ou HPLC",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B454",
+    "n": "BNP-par immunomarquage",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B455",
+    "n": "NT ProBNP-par immunomarquage",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B456",
+    "n": "Procalcitonine-par immunomarquage",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B457",
+    "n": "CRP ultrasensible-par immunomarquage",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B458",
+    "n": "F S H-Technique Immunoenzymatique",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B459",
+    "n": "InhibineB-Technique Immunoenzymatique",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B460",
+    "n": "AMH: hormone anti-mullérienne-Technique Immunoenzymatique",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B461",
+    "n": "Triple Test(DépistageTrisomie21)-3marqueurs: AFP, bHCG, Oestriol",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B462",
+    "n": "Testostérone LIBRE-Technique Immunoenzymatique",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B463",
+    "n": "Insuline LIBRE-Technique Immunoenzymatique",
+    "b": 450,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B464",
+    "n": "PTH Intacte-Technique Immunoenzymatique",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B465",
+    "n": "Testostérone urinaire- parImmunomarquage",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B466",
+    "n": "Cortisol libre urinaire-par Immunomarquage",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B467",
+    "n": "Chromatographie qualitative des acides aminés (Sang, urine, LCR)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B468",
+    "n": "Dosage et identification des MPS (GAG) urinaires",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B469",
+    "n": "CCM sucres ou oligosaccharides urinaires",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B470",
+    "n": "Dosage fluorimétrique de la Phénylalanine (suivi PCU)",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B471",
+    "n": "Dosage d'un métabolite:Galactose-1 Phosphate, Carnitine,Acide pipécolique",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B472",
+    "n": "Diagnostic de la Galactosémie congénitale",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B473",
+    "n": "Recherche d'un déficit enzymatique sur leucocytes (1 activité ) Cotation limitée à 5 activités",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B474",
+    "n": "Chromatographie quantitative des acides aminés",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B475",
+    "n": "Diagnostic enzymatique de la maladie de Hurler",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B476",
+    "n": "Etude des acyl carnitines",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B477",
+    "n": "Recherche d'une mutation responsable de la maladie",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B478",
+    "n": "Acides gras à très longue chaine (CPG)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B479",
+    "n": "Identification d'une hémoglobinose (Isofocalisation + HPLC des chaines)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B480",
+    "n": "Diagnostic anténatal d'une hémoglobinopathie",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B481",
+    "n": "Ionogramme urinaire (Na-K-Cl-Ca)",
+    "b": 100,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B482",
+    "n": "Microalbuminurie de 24H-par immunoNéphélémetrie",
+    "b": 120,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B483",
+    "n": "Microalbuminurie exprimée en gramme/gramme de créatinine",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B484",
+    "n": "Etude des Hémoglobines-HPLC",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B485",
+    "n": "Folates plasmatiques (vitamineB9)- par Immunomarquage",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B486",
+    "n": "Folates érythrocytaires- par Immunomarquage",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B487",
+    "n": "Antithrombine III-Technique chromogénique ou Néphélémétrie",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B488",
+    "n": "Protéine C- Technique chromogénique ou EIA",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B489",
+    "n": "Protéine S-Technique chromogénique ou Turbdimétrie",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B490",
+    "n": "Activité Anti-Xa-T chronométrique ou chromogénique",
+    "b": 120,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B491",
+    "n": "Identification des agglutinines irrègulières",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B492",
+    "n": "Phénotype Rhésus CcEe+Kell",
+    "b": 100,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B493",
+    "n": "Temps de saignement IVY(Méthode du Brassard)",
+    "b": 50,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B494",
+    "n": "D Dimères-turbidimétrie ou Immunomarquage",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B495",
+    "n": "Etude de la Moelle Osseuse:Examen cytologique et cytochimique",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B496",
+    "n": "Hélicobacter pylori-Antigènes",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B497",
+    "n": "Charge virale de l'Hépatite C",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B498",
+    "n": "Génotypage du virus de L'Hépatite C",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B499",
+    "n": "Fibrotest-Actitest",
+    "b": 800,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B500",
+    "n": "Anti Fongigramme",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B501",
+    "n": "BK Antibiogramme",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B502",
+    "n": "Chlamydiae trachomatis PCR",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B503",
+    "n": "Hémoculture Aerobie+Anaerobie-(T.fluorométrique sur Automates )",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B504",
+    "n": "BK -Mycobactéries PCR",
+    "b": 900,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B505",
+    "n": "Hydatidose Confirmation par Western Blot",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B506",
+    "n": "Toxoplasmose-IgA",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B507",
+    "n": "Toxoplasmose Avidité",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B508",
+    "n": "Recherche d'ADN par PCR",
+    "b": 900,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B509",
+    "n": "Leishmaniose-Confirmation par western-blot",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B510",
+    "n": "Recherche d'antigènes aspergillaires circulants",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B511",
+    "n": "Recherche d'antigènes candidosiques circulants",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B512",
+    "n": "Recherche et titrage de l'antigène cryptococcique dans le sang ou le LCR",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B513",
+    "n": "HLA B27-Technique Microlymphocytotoxicité (LCT)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B514",
+    "n": "HLA B5-Technique Microlymphocytotoxicité (LCT)",
+    "b": 800,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B515",
+    "n": "Typage HLA classe I- Technique Microlymphocytotoxicité (LCT)",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B516",
+    "n": "Typage HLA classe II par biologie moléculaire",
+    "b": 900,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B517",
+    "n": "Cross match HLA- Technique microlymphocytotoxicité",
+    "b": 700,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B518",
+    "n": "Typage HLA locus A par technique luminex",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B519",
+    "n": "Typage HLA locus B par technique luminex",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B520",
+    "n": "Typage HLA locus DR par technique luminex",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B521",
+    "n": "Typage HLA locus DQ par technique luminex",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B522",
+    "n": "Recherche d'anticorps anti HLA par technique ELISA",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B523",
+    "n": "Identification d'anticorps anti HLA classe I par ELISA",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B524",
+    "n": "Identification d'anticorps anti HLA classe II par ELISA",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B525",
+    "n": "Identification des anticorps antigliadine (IgG et IgA),Antitransglutaminase tissulaire (tTg) par technique luminex ou équivalent",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B526",
+    "n": "Identification des anticorps anti Phospholipides: Cardiolipine, B2 GP1, Prothrombine, Phosphatidylsérine par technique Luminex ou équivalent",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B527",
+    "n": "Identification des anticorps Anti-nucléaires (ANA) : SSA, SSB, Sm, RNP, Scl-70, Jo-1, dsDNA, Cent-B, Histone par technique Luminex ou équivalent",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B528",
+    "n": "Identification des anticorps anti Thyroglobuline et thyropéroxydase par technique luminex",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B529",
+    "n": "Anticorps anti-neutrophiles cytoplasmiques(ANCA): Myelopéroxidase, Proteinase 3, GBM par technique Luminex ou équivalent",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B530",
+    "n": "Anticorps anti-DNA natif-T.Immunomarquage",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B531",
+    "n": "Anticorps anti SSA- Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B532",
+    "n": "Anticorps anti SSB- Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B533",
+    "n": "Anticorps anti Sm- Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B534",
+    "n": "Anticorps anti Scl 70- Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B535",
+    "n": "Anticorps anti RNP- Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B536",
+    "n": "Anticorps anti Jo1-Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B537",
+    "n": "Anticorps anti muscle lisse-Si Prescription isolée",
+    "b": 150,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B538",
+    "n": "Anticorps anti-cardiolipine IgG- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B539",
+    "n": "Anticorps anti-cardiolipine IgM- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B540",
+    "n": "Anticorps anti-Bêta 2 glycoprotéine 1 -B2GP-IgG",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B541",
+    "n": "Anticorps anti-Bêta 2 glycoprotéine 1 -B2GP-IgM",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B542",
+    "n": "Anticorps anti R.endoplasmique LKM",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B543",
+    "n": "Anticorps anti endomysium IgA- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B544",
+    "n": "Anticorps anti endomysium IgG- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B545",
+    "n": "Anticorps anti GAD- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B546",
+    "n": "Anticorps anti gliadine IgG-Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B547",
+    "n": "Anticorps anti gliadine IgM-Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B548",
+    "n": "Anticorps anti gliadine IgA-Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B549",
+    "n": "Anticorps anti transglutaminase tissulaire -IgA- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B550",
+    "n": "Anticorps anti transglutaminase tissulaire-IgG- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B551",
+    "n": "Anticorps anti phospholipides- Si Prescription isolée",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B552",
+    "n": "Anticorps-Saccharomyces cerevisiae(ASCA)-EIA",
+    "b": 450,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B553",
+    "n": "Anticorps anti-peptides cycliques citrullinés",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B554",
+    "n": "Anticorps anti ilots de Langerhans",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B555",
+    "n": "Anticorps anti recepteur de la TSH (TRAK)",
+    "b": 450,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B556",
+    "n": "CTX-Telopeptide C",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B557",
+    "n": "Test polyallergènes: pneumallergènes",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B558",
+    "n": "Test polyallergènes: trophallergènes",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B559",
+    "n": "Test polyallergènes: mixtes",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B560",
+    "n": "IGF-1(Somatomedine)",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B561",
+    "n": "IGF-2",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B562",
+    "n": "Protéine BENCE-JONES",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B563",
+    "n": "PSA libre",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B564",
+    "n": "Bhcg chaine libre marqueur tumoral",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B565",
+    "n": "Cyfra 21",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B566",
+    "n": "CA 549",
+    "b": 400,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B567",
+    "n": "MAR TEST(Ac Anti-spermatozoides)",
+    "b": 500,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B568",
+    "n": "TMS(Test de Migration-Survie)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B569",
+    "n": "IAC",
+    "b": 800,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B570",
+    "n": "Fragmentation de l'ADN spermatique (T.TUNEL)",
+    "b": 800,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B571",
+    "n": "Décondensation de la chromatine ou test de dénaturation(T. bleu d'aniline)",
+    "b": 200,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B572",
+    "n": "Ciclosporine",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B573",
+    "n": "Cannabinoides",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B574",
+    "n": "Carbamazépine (Tegretol)",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B575",
+    "n": "Dépakine(valproate de sodium)",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 827-12)",
+    "ar": "827-12"
+  },
+  {
+    "c": "B576",
+    "n": "Immunophénotypage par cytométrie en flux d'une leucémie aigue",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B577",
+    "n": "Immunophénotypage par cytométrie en flux d'un syndrome lymphoprolifératif",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B578",
+    "n": "Cytométrie en flux de l'hémoglobine paroxystique nocturne (HPN)",
+    "b": 450,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B579",
+    "n": "Mesure de la cytotoxicité des cellules NK",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B580",
+    "n": "Test d'activation des basophiles ( allergène unitaire)",
+    "b": 600,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B581",
+    "n": "Caryotype constitutionnel postnatal",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B582",
+    "n": "Recherche d'une mutation par simple PCR",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B583",
+    "n": "Recherche d'une mutation par séquençage d'un amplion",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B584",
+    "n": "Recherche d'un variant de l'ADN par RT-PCR et sonde Taqman",
+    "b": 1200,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B585",
+    "n": "Recherche de métaux lourds dans le sang (par élément)",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B586",
+    "n": "Recherche de solvants dans le sang (par élément)",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B587",
+    "n": "Recherche de métaux lourds dans les urines (par élément)",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B588",
+    "n": "Recherche de solvants dans les urines (par élément)",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B589",
+    "n": "Recherche de métaux lourds dans les cheveux (par élément)",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B590",
+    "n": "Recherche de monoxyde de carbone (CO) dans le sang",
+    "b": 250,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  },
+  {
+    "c": "B591",
+    "n": "Recherche des stupéfiants dans les urines",
+    "b": 300,
+    "cat": "Actes assimilés (Arrêté 1968-16)",
+    "ar": "1968-16"
+  }
+]

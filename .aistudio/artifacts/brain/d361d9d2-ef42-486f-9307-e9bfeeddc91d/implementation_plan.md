@@ -1,51 +1,127 @@
-# Page des Travaux et Publications Scientifiques du Dr MECHAL Youness
+# Page des Tarifs des Analyses de Biologie Médicale (Nomenclature Officielle Marocaine)
 
-Mise à jour et consolidation rigoureuse de la page valorisant l'expertise académique et les publications de recherche du Dr MECHAL Youness, Pharmacien biologiste (Ancien Interne au CHU Ibn Sina de Rabat). Cette page renforce l'autorité médicale (E-E-A-T) du Laboratoire Roma, optimise son référencement dans les moteurs d'IA générative (GEO) et explicite les bénéfices concrets de cette rigueur scientifique pour la prise en charge des patients.
-
-## Décisions Clés & Données Factuelles Vérifiées
-
-- **Titre & Statut confirmés** :
-  - « Dr MECHAL Youness, Pharmacien biologiste » (Directeur du Laboratoire d'Analyses Médicales Roma, Casablanca).
-  - « Ancien Interne au CHU Ibn Sina de Rabat ». Formule strictement respectée dans l'ensemble des fichiers sans variantes raccourcies.
-- **Cursus universitaire et hospitalier confirmé** :
-  - **Doctorat en Pharmacie** (Faculté de Médecine et de Pharmacie de Rabat – Université Mohammed V, 2014, thèse : *« Détection du protozoaire Entamoeba gingivalis au niveau des poches parodontales »*), avec internat au CHU Ibn Sina de Rabat.
-  - **Diplôme de Spécialité Médicale (DSM) en Biologie Médicale** (Université Mohammed V de Rabat, 2015-2019).
-  - **Diplôme Universitaire (DU) en Management de la Qualité (MQPAS)** (Université de Bordeaux, 2018).
-  - **Distinction** : Prix du meilleur poster scientifique (Société Marocaine de Chimie Clinique, 2016).
-  - **Affiliations professionnelles** : Membre de la Société Marocaine de Microbiologie Médicale (SMAMM).
-- **Plateau technique & Qualité** :
-  - Mention du plateau technique neuf de dernière génération pour la biochimie, l'hématologie et l'immuno-analyse, soutenu par des contrôles internes stricts et des évaluations externes de la qualité (EEQ).
-- **Fiches des 4 publications scientifiques vérifiées (aucune donnée inventée)** :
-  1. **A (BMC Infect Dis 2019;19(1):1069)** :
-     - Auteurs : Mechal Y, Benaissa E, El mrimar N, Benlahlou Y, Bssaibis F, Zegmout A, Chadli M, Malik YS, Touil N, Abid A, Maleb A, Elouennass M.
-     - Mention « Premier auteur ».
-     - DOI : `10.1186/s12879-019-4687-7` · PMID : `31856744` · PMCID : `PMC6924055`.
-     - Lieu de l'étude : Hôpital militaire d’instruction Mohammed V, Rabat ; CHU Ibn Sina, Rabat.
-  2. **B (GERMS 2021;11(2):189-198)** :
-     - Auteurs : Benaissa E, Mechal Y, et al. (4e auteur).
-     - DOI : `10.18683/germs.2021.1256` · PMID : `34422691` · PMCID : `PMC8373403`.
-  3. **C (GERMS 2021;11(4):562-569)** :
-     - Auteurs : Benaissa E, Mechal Y, et al. (3e auteur).
-     - DOI : `10.18683/germs.2021.1291` · PMID : `35096673` · PMCID : `PMC8789347`.
-  4. **D (Clin Case Rep 2018;6(11):2117-2120)** :
-     - Auteurs : Benlahlou Y, Mechal Y, et al. (5e auteur).
-     - DOI : `10.1002/ccr3.1815` · PMID : `30455903` · PMCID : `PMC6230608`.
-- **Travaux placés en commentaires `[À CONFIRMER PAR LE DR MECHAL]` (retirés du texte public)** :
-  - Prépublication SSRN 2024
-  - Déficit en G6PD : Série de 54 cas (2019)
-  - Non-conformités pré-analytiques en hémostase (GEHT 2016)
-  - Validation de méthodes PTHi 1-84 / Glucose sur automate Architect ci8200
-  - Infection urinaire à Trichosporon asahii (2014)
-- **Sensibilisation & Éducation santé** :
-  - Formulation mise à jour pour le test respiratoire à l'urée : *« Le test respiratoire à l'urée marquée est disponible au Laboratoire Roma, idéalement sur prescription médicale. »*
+Développement d'une page complète, autonome, interactive et intégrée au site du **Laboratoire d'Analyses Médicales Roma** (Casablanca, dirigé par le Dr MECHAL Youness, Pharmacien biologiste), répertoriant l'ensemble des actes de biologie médicale cotés selon la nomenclature marocaine (Arrêté n° 1796-03 et n° 827-12) avec les coefficients de la lettre-clé **B** (Tarif conventionnel à 1,10 DH pour la CNSS/CNOPS/AMO, et Tarif non conventionnel à 1,34 DH pour les non mutualistes).
 
 ---
 
-## Fichiers Synchronisés & Validés
+### User Review & Critical Decisions
 
-1. `public/publications-dr-mechal-youness.html` (Fichier HTML statique canonique avec JSON-LD complet)
-2. `public/publications-scientifiques/index.html` (Redirection/alias avec chemins relatifs d'assets)
-3. `public/publications-scientifiques/publications-dr-mechal-youness.html` (Alias miroir)
-4. `src/components/PublicationsScientifiquesPage.tsx` (Composant React pour la route `#publications-scientifiques`)
-5. `index.html` (Balisage Schema.org fondateur et section pré-rendue pour les robots)
-6. `public/education-prevention-sante.html` & `src/components/EducationSantePage.tsx` (Mise à jour de la disponibilité du test respiratoire à l'urée marquée)
+> [!IMPORTANT]
+> Les réponses aux questions de cadrage ont confirmé les choix suivants :
+> - **Format de livraison** : Page HTML complète, autonome (Tailwind CSS CDN + Vanilla JS) et directement intégrée dans le site web du laboratoire (`public/tarifs-analyses.html` accessible via l'URL `https://laboratoireroma.github.io/laboroma/tarifs-analyses.html`, ajoutée au menu de navigation, au pied de page et au `sitemap.xml`).
+> - **Navigation dans le catalogue** : Affichage fluide de l'ensemble des actes avec recherche instantanée multicritère (par nom d'analyse, code nomenclature, ou lettre-clé), pagination dynamique et fluide (par tranches configurables de 50, 100 ou "Tous" avec compteur en direct), pour une fluidité absolue sur mobile et desktop.
+> - **Exhaustivité des données** : Intégration d'une base de données exhaustive couvrant les grandes spécialités médicales (Biochimie sanguine & urinaire, Hématologie & Cytologie, Hémostase & Coagulation, Hormonologie & Marqueurs tumoraux, Sérologie infectieuse & Immunologie, Microbiologie & Bactériologie/Parasitologie, Auto-immunité et Assimilations hors nomenclature).
+
+---
+
+### 1. Overview & Core Concept
+
+- **Rôle & Bénéfice** : Offrir aux patients, prescripteurs et assurés une transparence tarifaire totale, conforme à la déontologie médicale et aux arrêtés ministériels en vigueur au Maroc.
+- **Calcul réglementaire automatisé** :
+  $$\text{Tarif Conventionnel (AMO : CNOPS, CNSS)} = \text{Coefficient (B)} \times 1{,}10\text{ DH}$$
+  $$\text{Tarif Non Conventionnel (Sans mutuelle / Autres)} = \text{Coefficient (B)} \times 1{,}34\text{ DH}$$
+- **Expérience utilisateur** :
+  - Recherche en temps réel sans rechargement.
+  - Sélecteur de spécialités médicales (Badges de catégories interactifs : *Toutes, Biochimie, Hématologie, Hormonologie, Immunologie, Microbiologie, etc.*).
+  - Simulateur / Panier d'estimation de devis (calcul instantané du total conventionnel et non conventionnel pour un bilan d'analyses prescrit).
+  - Version imprimable propre (CSS `@media print`) pour délivrer une fiche de cotation conforme aux patients.
+
+---
+
+### 2. User Experience & Visual Design
+
+#### A. Architecture Visuelle & Palette (Anti-Slop Restraint & Charte Médicale)
+- **Palette** :
+  - *Fond dominant (60%)* : Blanc pur (`#FFFFFF`) et gris médical très doux (`#F8FAFC`).
+  - *Surfaces structurelles (30%)* : Panneaux ardoise clinique (`#F1F5F9`), bordures ultra-fines (`border-slate-200`), texte principal ardoise profond (`#0F172A`).
+  - *Accents de calibrage (10%)* : Sarcelle médicale officielle Roma (`#0D9488` / `#0F766E`) pour les éléments de repère et les tarifs conventionnels, et bleu nuit professionnel pour l'en-tête.
+- **Typographie** :
+  - Titres et interface : `Plus Jakarta Sans` / `Outfit` via Google Fonts.
+  - Valeurs numériques, codes d'actes et montants : `font-mono tabular-nums` pour un alignement vertical strict et rigoureux.
+
+#### B. Structure de la Page
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│ TOP BAR : Laboratoire Roma · Casablanca | Retour au site | Tél & WhatsApp│
+├────────────────────────────────────────────────────────────────────────┤
+│ HERO HEADER :                                                          │
+│ "Tarifs des Analyses de Biologie Médicale"                             │
+│ "Nomenclature officielle marocaine et tarification réglementée"        │
+├────────────────────────────────────────────────────────────────────────┤
+│ ENCADRÉ DES RÉFÉRENCES LÉGALES & DÉONTOLOGIQUES :                      │
+│ • Arrêté ministériel n° 1796-03 (B.O. n° 5366 du 3 nov. 2005)          │
+│ • Arrêté ministériel n° 827-12 (assimilation des actes hors nomenclature)│
+│ • Explication formule : Prix = B × Valeur monétaire                    │
+│ [CARTE : Tarif Conventionnel B = 1,10 DH]  [CARTE : Tarif Public B = 1,34 DH]│
+├────────────────────────────────────────────────────────────────────────┤
+│ ZONE DE CONTRÔLE & FILTRAGE :                                          │
+│ [ 🔍 Barre de recherche instantanée (Code, nom d'analyse, mot-clé)   ] │
+│ [ Filtres Spécialités : Toutes | Biochimie | Hématologie | Hormones... ]│
+│ [ Sélecteur d'affichage : 50 / 100 / Tous ] [ Bouton : Télécharger/Imprimer]│
+├────────────────────────────────────────────────────────────────────────┤
+│ TABLEAU OFFICIEL DES ACTES (Responsive Desktop & Cartes Mobile) :      │
+│ Code | Acte & Désignation Médicale | Coeff (B) | Conv. (DH) | Non Conv. (DH)│
+│ B118 | Glycémie à jeun             | B 30      | 33,00 DH   | 40,20 DH │
+│ B080 | Numération Formule Sanguine | B 80      | 88,00 DH   | 107,20 DH│
+│ ...  | ...                         | ...       | ...        | ...      │
+├────────────────────────────────────────────────────────────────────────┤
+│ SIMULATEUR / PANIER D'ESTIMATION (OPTIONNEL EN BAS DE PAGE) :          │
+│ Sélection d'actes pour calculer le devis estimatif d'une ordonnance     │
+├────────────────────────────────────────────────────────────────────────┤
+│ FOOTER OFFICIEL DU LABORATOIRE ROMA :                                  │
+│ Direction : Dr MECHAL Youness · Pharmacien biologiste                  │
+│ Adresse 117 Angle Bd 2 Mars · Conventions CNSS, CNOPS, CMIM, Wafa      │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 3. Architecture Technique & Intégration
+
+```
+                     public/tarifs-analyses.html
+                     (Page autonome HTML5/Tailwind CDN/JS)
+                                  │
+          ┌───────────────────────┴───────────────────────┐
+          ▼                                               ▼
+Données de nomenclature marocaine            Logique applicative Vanilla JS
+(Tableau d'objets JSON structuré :          (Recherche floue, filtrage par
+Code, Désignation, B, Catégorie,             catégorie, calcul dynamique,
+Précisions pré-analytiques)                  pagination, tri, simulateur panier)
+          │                                               │
+          └───────────────────────┬───────────────────────┘
+                                  ▼
+               Intégration écosystème Laboratoire Roma :
+          • Ajout dans public/sitemap.xml
+          • Ajout dans public/plan-du-site.html
+          • Liens dans TopNav & Footer du site principal
+```
+
+#### Base de Données des Actes Intégrés :
+La page intègre une base complète structurée par spécialités médicales conformes à l'arrêté 1796-03 et à la pratique de référence marocaine (exemples clés) :
+1. **Biochimie Clinique & Métabolisme** : Glycémie (B30), Urée (B25), Créatinine (B30), Acide urique (B30), Cholestérol total (B25), HDL/LDL (B40), Triglycérides (B35), Bilan hépatique ASAT/ALAT (B35 chacun), Bilirubines (B35), Phosphatases alcalines (B40), GGT (B35), Ionogramme sanguin (B70), Calcium, Magnésium, Phosphore, HbA1c (B100), etc.
+2. **Hématologie & Hémostase** : Hémogramme / NFS complet (B80), Vitesse de sédimentation VS (B20), Réticulocytes (B40), TP / INR (B50), TCA (B50), Fibrinogène (B40), D-Dimères (B150), Groupage sanguin ABO/Rhésus + RAI (B80), etc.
+3. **Hormonologie & Marqueurs Spécialisés** : TSH ultra-sensible (B100), T4 libre (B100), T3 libre (B100), Ferritine (B120), PSA total (B150), PSA libre (B180), Bêta-HCG plasmatique (B100), Prolactine (B120), Cortisol (B120), Vitamine D 25-OH (B250 assimilé), Vitamine B12 / Folates, etc.
+4. **Immunologie & Sérologie Infectieuse** : Sérologie VIH 1+2 (B100), Hépatite B Ag HBs (B100), Hépatite C Ac anti-VHC (B120), Toxoplasmose IgG/IgM (B100), Rubéole IgG/IgM (B100), Sérologie Syphilis TPHA/VDRL (B50), CRP quantitative (B40), ASLO, Facteur Rhumatoïde (B50), etc.
+5. **Microbiologie, Bactériologie & Parasitologie** : ECBU Examen cytobactériologique des urines avec antibiogramme (B120), Coproculture (B140), Examen parasitologique des selles EPS (B60), Prélèvement vaginal / urétral avec culture (B130), Recherche de sang dans les selles (B40), Test respiratoire à l'urée / Helicobacter pylori, etc.
+6. **Actes Hors Nomenclature Assimilés (Arrêté 827-12)** : Marqueurs spécifiques récents avec indications claires de cotation.
+
+---
+
+### 4. Plan d'Exécution & Vérification
+
+1. **Création du fichier `public/tarifs-analyses.html`** :
+   - Fichier HTML5 autonome et complet intégrant Tailwind CSS CDN, fontes Google (Plus Jakarta Sans & JetBrains Mono), icônes vectorielles SVG intégrées (sans dépendance externe fragile).
+   - En-tête officiel, encadré des références réglementaires avec les deux arrêtés ministériels et les deux cartes tarifaires (1,10 DH conventionnel et 1,34 DH non conventionnel).
+   - Barre de recherche instantanée + 8 boutons de filtrage thématique par grande spécialité.
+   - Tableau interactif avec pagination fluide (50, 100, Tous) et mode responsive optimisé pour smartphones (cartes claires et aérées avec labels explicites).
+   - Simulateur de devis pour sélectionner des actes et visualiser le total calculé.
+   - Mentions déontologiques : affichage des conditions de prise en charge et de remboursement AMO/Mutuelles.
+2. **Intégration dans le site du laboratoire** :
+   - Mise à jour de `public/sitemap.xml` (ajout de la nouvelle URL avec priorité 0.8).
+   - Mise à jour de `public/plan-du-site.html` (ajout de la page Tarifs dans l'arborescence des services).
+   - Ajout d'un lien d'accès dans le composant de navigation ou le footer du site principal.
+3. **Contrôle Qualité & Tests** :
+   - Vérification du bon calcul : $Prix = Coeff \times 1{,}10$ et $Prix = Coeff \times 1{,}34$.
+   - Validation du filtrage instantané et de la réactivité mobile.
+   - Compilation et validation du build (`compile_applet`, `lint_applet`, `npm run build`).
