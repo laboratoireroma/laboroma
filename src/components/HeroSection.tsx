@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             <span>Direction : {LAB_CONTACT.director}</span>
           </span>
           <span className="hidden sm:inline text-slate-300">·</span>
-          <span className="text-slate-600 hidden sm:inline">Pharmacien biologiste</span>
+          <span className="text-slate-600 hidden sm:inline">Spécialiste en Analyses de Biologie Médicales</span>
           <span className="hidden md:inline text-slate-300">·</span>
           <a
             href="#publications-scientifiques"
